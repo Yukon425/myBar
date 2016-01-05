@@ -17,6 +17,8 @@
 		1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */; };
 		54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */; };
 		54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D501C3C5CB600EFCBFC /* Recipe.swift */; };
+		54509D541C3C5F2200EFCBFC /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D531C3C5F2200EFCBFC /* NetworkController.swift */; };
+		54509D561C3C616B00EFCBFC /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D551C3C616B00EFCBFC /* RecipeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddIngredientViewController.swift; path = ../AddIngredientViewController.swift; sourceTree = "<group>"; };
 		54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		54509D501C3C5CB600EFCBFC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		54509D531C3C5F2200EFCBFC /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkController.swift; path = ../NetworkController.swift; sourceTree = "<group>"; };
+		54509D551C3C616B00EFCBFC /* RecipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeController.swift; path = ../RecipeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 		1F5974F01C3B3AFB00CD1D2F /* myBar */ = {
 			isa = PBXGroup;
 			children = (
+				54509D551C3C616B00EFCBFC /* RecipeController.swift */,
+				54509D531C3C5F2200EFCBFC /* NetworkController.swift */,
 				1F5975031C3B3E1800CD1D2F /* InventoryViewController.swift */,
 				1F5975051C3B3E2A00CD1D2F /* RecipesViewController.swift */,
 				1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */,
@@ -159,10 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54509D541C3C5F2200EFCBFC /* NetworkController.swift in Sources */,
 				1F5974F21C3B3AFB00CD1D2F /* AppDelegate.swift in Sources */,
 				1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */,
 				54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */,
 				54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */,
+				54509D561C3C616B00EFCBFC /* RecipeController.swift in Sources */,
 				1F5975061C3B3E2A00CD1D2F /* RecipesViewController.swift in Sources */,
 				1F5975081C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift in Sources */,
 				1F5975041C3B3E1800CD1D2F /* InventoryViewController.swift in Sources */,
