@@ -10,6 +10,12 @@ import UIKit
 
 class InventoryViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var alcoholicTableView: UITableView!
+    
+    
+    @IBOutlet weak var nonAlcoholicTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,12 +32,19 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ingredient", forIndexPath: indexPath)
-        
-        cell.textLabel?.text = "Vodka"
-
-        
-        return cell
+        if tableView == alcoholicTableView {
+            let cell = tableView.dequeueReusableCellWithIdentifier("alcoholic", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "Vodka"
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath)
+            
+            cell.textLabel?.text = "salt"
+            
+            return cell
+        }
     }
 
 }

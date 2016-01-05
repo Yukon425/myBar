@@ -37,7 +37,7 @@ class AddIngredientViewController: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ingredient", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "Schnops"
+        cell.textLabel?.text = "Schnapps"
 
         
         return cell
