@@ -8,7 +8,10 @@
 
 import Foundation
 
-class Ingredient {
+class Ingredient: Equatable {
+    
+    private let alcoholicKey = "alcoholic"
+    private let nameKey = "name"
     
     var alcoholic: Bool
     var name: String
@@ -31,4 +34,18 @@ class Ingredient {
         self.name = name
         
     }
+    
+    func dictionaryCopy() -> [String: AnyObject] {
+        
+        let dictionary = [
+            alcoholicKey : self.alcoholic,
+            nameKey : self.name
+        ]
+        
+        return dictionary as! [String : AnyObject]
+    }
+}
+
+func == (lhs: Ingredient, rhs: Ingredient) -> Bool {
+    return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
 }
