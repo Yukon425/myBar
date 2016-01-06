@@ -25,8 +25,9 @@ class IngredientController {
     func addIngredient(ingredient: Ingredient) {
         if !(myPantry.contains(ingredient)){
             myPantry.append(ingredient)
+            self.saveToPersistentStorage()
         }
-        self.saveToPersistentStorage()
+        
     }
     
     func removeIngredient(ingredient: Ingredient) {
