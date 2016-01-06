@@ -16,7 +16,7 @@
 		1F5975081C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */; };
 		1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */; };
 		1F5A497D1C3D955600EAE099 /* JSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A497C1C3D955600EAE099 /* JSONController.swift */; };
-		1F5A497F1C3DA8E800EAE099 /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A497E1C3DA8E800EAE099 /* ingredients.json */; };
+		1F5A49841C3DBA6F00EAE099 /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A49831C3DBA6F00EAE099 /* ingredients.json */; };
 		1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F99C5731C3D889E00C9FC44 /* drinkList.json */; };
 		54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */; };
 		54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D501C3C5CB600EFCBFC /* Recipe.swift */; };
@@ -36,7 +36,7 @@
 		1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeDirectionsViewController.swift; path = ../RecipeDirectionsViewController.swift; sourceTree = "<group>"; };
 		1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddIngredientViewController.swift; path = ../AddIngredientViewController.swift; sourceTree = "<group>"; };
 		1F5A497C1C3D955600EAE099 /* JSONController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONController.swift; sourceTree = "<group>"; };
-		1F5A497E1C3DA8E800EAE099 /* ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ingredients.json; sourceTree = "<group>"; };
+		1F5A49831C3DBA6F00EAE099 /* ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ingredients.json; sourceTree = "<group>"; };
 		1F99C5731C3D889E00C9FC44 /* drinkList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = drinkList.json; sourceTree = "<group>"; };
 		54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		54509D501C3C5CB600EFCBFC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		1F5A49801C3DA8EE00EAE099 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				1F5A497E1C3DA8E800EAE099 /* ingredients.json */,
+				1F5A49831C3DBA6F00EAE099 /* ingredients.json */,
 				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
 			);
 			name = JSON;
@@ -190,7 +190,7 @@
 				1F5974FC1C3B3AFB00CD1D2F /* LaunchScreen.storyboard in Resources */,
 				1F5974F91C3B3AFB00CD1D2F /* Assets.xcassets in Resources */,
 				1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */,
-				1F5A497F1C3DA8E800EAE099 /* ingredients.json in Resources */,
+				1F5A49841C3DBA6F00EAE099 /* ingredients.json in Resources */,
 				1F5974F71C3B3AFB00CD1D2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
