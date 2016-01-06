@@ -18,17 +18,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NetworkController.dataAtURLwithKeyword("Vodka") { (resultData) -> Void in
-            if let resultData = resultData{
-                RecipeController.initArrayRecipeID(resultData)
-            }else{
-                print("network failed")
-            }
-        }
-        
-        
-
+        JsonSerializer.queryRecipes()
         // Do any additional setup after loading the view.
     }
 
