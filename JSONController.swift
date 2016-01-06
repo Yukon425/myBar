@@ -31,13 +31,18 @@ class JSONController {
             let allKeys = dicObject.keys
             
             for key in allKeys {
-                guard let recipeDic = dicObject[key] as? [String:AnyObject] else {return []}
-                guard let recipeObject = Recipe(dic: recipeDic) else {return []}
-                recipes.append(recipeObject)
+                if let recipeDic = dicObject[key] as? [String:AnyObject]{
+                    if let recipeObject = Recipe(dic: recipeDic){
+                        recipes.append(recipeObject)
+                    }
+                }
             }
+            
             return recipes
+            print("hi")
+        } else {
+            return []
         }
-        return []
     }
     
     static func queryIngredients()->[Ingredient]{

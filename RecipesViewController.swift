@@ -10,16 +10,18 @@ import UIKit
 
 class RecipesViewController: UIViewController, UITableViewDataSource {
 
+    var recipeDataSource = [Recipe]()
+    
+    @IBOutlet weak var tableViewOutlet: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
-        let inventory = RecipeController.sharedInstance.mockIngredients
-        let recipes = RecipeController.sharedInstance.mockRecipes
-        let possibleRecipes = RecipeController.sharedInstance.fitlerRecipes(inventory, recipes: recipes)
-        
-        print(possibleRecipes)
+        populateDataSource()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tableViewOutlet.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,18 +29,23 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    func populateDataSource(){
+        let inventory = IngredientController.sharedController.myPantry
+        let recipes = JSONController.queryRecipes()
+        recipeDataSource = RecipeController.sharedInstance.fitlerRecipes(inventory, recipes: recipes)
+    }
+    
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return recipeDataSource.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("recipe", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "White Russian"
-
+        let recipe = recipeDataSource[indexPath.row]
         
-        //stuff
+        cell.textLabel?.text = recipe.name
         
         return cell
     }

@@ -30,7 +30,6 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.allIngredients = JSONController.queryIngredients()
-        print("")
     }
 
     override func didReceiveMemoryWarning() {
