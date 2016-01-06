@@ -10,13 +10,13 @@ import Foundation
 
 class JSONController {
     
-    static func queryRecipes(){
+    static func queryRecipes()->[Recipe]{
         
         var recipes: [Recipe] = []
         
-        guard let path = NSBundle.mainBundle().pathForResource("drinkList", ofType: "json") else {return}
+        guard let path = NSBundle.mainBundle().pathForResource("drinkList", ofType: "json") else {return []}
         
-        guard let json = NSData(contentsOfFile: path) else {return}
+        guard let json = NSData(contentsOfFile: path) else {return []}
         
         let object: AnyObject
         
@@ -24,18 +24,70 @@ class JSONController {
             object = try NSJSONSerialization.JSONObjectWithData(json, options: [])
         } catch {
             print("Json failed")
-            return
+            return []
         }
         
         if let dicObject = object as? [String:AnyObject]{
             let allKeys = dicObject.keys
             
             for key in allKeys {
-                guard let recipeDic = dicObject[key] as? [String:AnyObject] else {return}
-                guard let recipeObject = Recipe(dic: recipeDic) else {return}
+                guard let recipeDic = dicObject[key] as? [String:AnyObject] else {return []}
+                guard let recipeObject = Recipe(dic: recipeDic) else {return []}
                 recipes.append(recipeObject)
             }
+            return recipes
         }
+        return []
+    }
+    
+    static func queryIngredients()->[Ingredient]{
+        var ingredients: [Ingredient] = []
+        
+        guard let path = NSBundle.mainBundle().pathForResource("ingredients", ofType: "json") else {return []}
+        
+        guard let json = NSData(contentsOfFile: path) else {return []}
+        
+        let object: AnyObject
+        
+        do {
+            object = try NSJSONSerialization.JSONObjectWithData(json, options: [])
+        } catch {
+            print("Json failed")
+            return []
+        }
+        
+        if let dicObject = object as? [String : AnyObject]{
+            
+            guard let dicArray = dicObject["drinks"] as? [[String:AnyObject]] else {return []}
+            
+            
+            for ingredient in dicArray {
+                guard let ingredientObject = Ingredient(dictionary: ingredient) else {return []}
+                ingredients.append(ingredientObject)
+            }
+            return ingredients
+        }
+        return []
     }
         
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

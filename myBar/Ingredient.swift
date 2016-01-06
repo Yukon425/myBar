@@ -13,26 +13,28 @@ class Ingredient: Equatable {
     private let alcoholicKey = "alcoholic"
     private let nameKey = "name"
     
-    var alcoholic: Bool
+    var alcoholic: Bool = false
     var name: String
     
     init?(dictionary: [String:AnyObject]) {
         
-        guard let name = dictionary["name"] as? String,
-            let alcoholicString = dictionary["alcoholic"] as? String else {
+        guard let name = dictionary["name"] as? String else {
                 self.alcoholic = false
                 self.name = ""
                 return nil
         }
         
-        if alcoholicString == "alcoholic" {
-            self.alcoholic = true
-        } else {
-            self.alcoholic = false
+        if let alcoholic = dictionary["alcoholic"] as? Bool {
+            self.alcoholic = alcoholic
+        } else if let alcoholic = dictionary["alcoholic"] as? String {
+           
+            if alcoholic == "alcoholic" {
+                self.alcoholic = true
+            } else {
+                self.alcoholic = false
+            }
         }
-        
         self.name = name
-        
     }
     
     func dictionaryCopy() -> [String: AnyObject] {
@@ -47,5 +49,5 @@ class Ingredient: Equatable {
 }
 
 func == (lhs: Ingredient, rhs: Ingredient) -> Bool {
-    return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    return lhs.name == rhs.name
 }

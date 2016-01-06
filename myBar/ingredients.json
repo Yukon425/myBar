@@ -1,1814 +1,1814 @@
 {
 "drinks": [
 {
-"strIngredient1": "Light rum",
+"name": "Light rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Applejack",
+"name": "Applejack",
 "alcoholic": true
 },
 {
-"strIngredient1": "Gin",
+"name": "Gin",
 "alcoholic": true
 },
 {
-"strIngredient1": "Dark rum",
+"name": "Dark rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sweet Vermouth",
+"name": "Sweet Vermouth",
 "alcoholic": true
 },
 {
-"strIngredient1": "Strawberry schnapps",
+"name": "Strawberry schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Scotch",
+"name": "Scotch",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apricot brandy",
+"name": "Apricot brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Triple sec",
+"name": "Triple sec",
 "alcoholic": true
 },
 {
-"strIngredient1": "Southern Comfort",
+"name": "Southern Comfort",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orange bitters",
+"name": "Orange bitters",
 "alcoholic": true
 },
 {
-"strIngredient1": "Brandy",
+"name": "Brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lemon vodka",
+"name": "Lemon vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Blended whiskey",
+"name": "Blended whiskey",
 "alcoholic": true
 },
 {
-"strIngredient1": "Dry Vermouth",
+"name": "Dry Vermouth",
 "alcoholic": true
 },
 {
-"strIngredient1": "Amaretto",
+"name": "Amaretto",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tea",
+"name": "Tea",
 "alcoholic": false
 },
 {
-"strIngredient1": "Grenadine",
+"name": "Grenadine",
 "alcoholic": false
 },
 {
-"strIngredient1": "Creme de Cacao",
+"name": "Creme de Cacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apple brandy",
+"name": "Apple brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Dubonnet Blanc",
+"name": "Dubonnet Blanc",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apple schnapps",
+"name": "Apple schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Anejo rum",
+"name": "Anejo rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Champagne",
+"name": "Champagne",
 "alcoholic": true
 },
 {
-"strIngredient1": "Coffee liqueur",
+"name": "Coffee liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Rum",
+"name": "Rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cachaca",
+"name": "Cachaca",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sugar",
+"name": "Sugar",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackberry brandy",
+"name": "Blackberry brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Calvados",
+"name": "Calvados",
 "alcoholic": true
 },
 {
-"strIngredient1": "Ice",
+"name": "Ice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon",
+"name": "Lemon",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coffee brandy",
+"name": "Coffee brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Stout",
+"name": "Stout",
 "alcoholic": true
 },
 {
-"strIngredient1": "Irish whiskey",
+"name": "Irish whiskey",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vodka",
+"name": "Vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tequila",
+"name": "Tequila",
 "alcoholic": true
 },
 {
-"strIngredient1": "Bourbon",
+"name": "Bourbon",
 "alcoholic": true
 },
 {
-"strIngredient1": "Bitters",
+"name": "Bitters",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lime juice",
+"name": "Lime juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Egg",
+"name": "Egg",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mint",
+"name": "Mint",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sherry",
+"name": "Sherry",
 "alcoholic": true
 },
 {
-"strIngredient1": "Peanut liqueur",
+"name": "Peanut liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cherry brandy",
+"name": "Cherry brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Canadian whisky",
+"name": "Canadian whisky",
 "alcoholic": true
 },
 {
-"strIngredient1": "Kahlua",
+"name": "Kahlua",
 "alcoholic": true
 },
 {
-"strIngredient1": "Yellow Chartreuse",
+"name": "Yellow Chartreuse",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cognac",
+"name": "Cognac",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla liqueur",
+"name": "Vanilla liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sake",
+"name": "Sake",
 "alcoholic": true
 },
 {
-"strIngredient1": "Dubonnet Rouge",
+"name": "Dubonnet Rouge",
 "alcoholic": true
 },
 {
-"strIngredient1": "Anis",
+"name": "Anis",
 "alcoholic": true
 },
 {
-"strIngredient1": "Chocolate mint liqueur",
+"name": "Chocolate mint liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "White Creme de Menthe",
+"name": "White Creme de Menthe",
 "alcoholic": true
 },
 {
-"strIngredient1": "Gold tequila",
+"name": "Gold tequila",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sweet and sour",
+"name": "Sweet and sour",
 "alcoholic": false
 },
 {
-"strIngredient1": "Salt",
+"name": "Salt",
 "alcoholic": false
 },
 {
-"strIngredient1": "Galliano",
+"name": "Galliano",
 "alcoholic": true
 },
 {
-"strIngredient1": "Green Creme de Menthe",
+"name": "Green Creme de Menthe",
 "alcoholic": true
 },
 {
-"strIngredient1": "Kummel",
+"name": "Kummel",
 "alcoholic": true
 },
 {
-"strIngredient1": "Anisette",
+"name": "Anisette",
 "alcoholic": true
 },
 {
-"strIngredient1": "Carbonated water",
+"name": "Carbonated water",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon peel",
+"name": "Lemon peel",
 "alcoholic": false
 },
 {
-"strIngredient1": "White wine",
+"name": "White wine",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sloe gin",
+"name": "Sloe gin",
 "alcoholic": true
 },
 {
-"strIngredient1": "Melon liqueur",
+"name": "Melon liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Swedish Punsch",
+"name": "Swedish Punsch",
 "alcoholic": true
 },
 {
-"strIngredient1": "Peach brandy",
+"name": "Peach brandy",
 "alcoholic": true
 },
 {
-"strIngredient1": "Passion fruit juice",
+"name": "Passion fruit juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peppermint schnapps",
+"name": "Peppermint schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Creme de Noyaux",
+"name": "Creme de Noyaux",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pistachio liqueur",
+"name": "Pistachio liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Port",
+"name": "Port",
 "alcoholic": true
 },
 {
-"strIngredient1": "Red wine",
+"name": "Red wine",
 "alcoholic": true
 },
 {
-"strIngredient1": "Rock and rye",
+"name": "Rock and rye",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cherry vodka",
+"name": "Cherry vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Rye whiskey",
+"name": "Rye whiskey",
 "alcoholic": true
 },
 {
-"strIngredient1": "Grapefruit juice",
+"name": "Grapefruit juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Ricard",
+"name": "Ricard",
 "alcoholic": true
 },
 {
-"strIngredient1": "Banana liqueur",
+"name": "Banana liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla ice-cream",
+"name": "Vanilla ice-cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Whiskey",
+"name": "Whiskey",
 "alcoholic": true
 },
 {
-"strIngredient1": "Creme de Banane",
+"name": "Creme de Banane",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lime juice cordial",
+"name": "Lime juice cordial",
 "alcoholic": false
 },
 {
-"strIngredient1": "Strawberry liqueur",
+"name": "Strawberry liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sambuca",
+"name": "Sambuca",
 "alcoholic": true
 },
 {
-"strIngredient1": "Peach schnapps",
+"name": "Peach schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apple juice",
+"name": "Apple juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Berries",
+"name": "Berries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blueberries",
+"name": "Blueberries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Orange juice",
+"name": "Orange juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pineapple juice",
+"name": "Pineapple juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cranberries",
+"name": "Cranberries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Brown sugar",
+"name": "Brown sugar",
 "alcoholic": false
 },
 {
-"strIngredient1": "Milk",
+"name": "Milk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Egg yolk",
+"name": "Egg yolk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon juice",
+"name": "Lemon juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Soda water",
+"name": "Soda water",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coconut liqueur",
+"name": "Coconut liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cream",
+"name": "Cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pineapple",
+"name": "Pineapple",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sugar syrup",
+"name": "Sugar syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Rhubarb",
+"name": "Rhubarb",
 "alcoholic": false
 },
 {
-"strIngredient1": "Ginger ale",
+"name": "Ginger ale",
 "alcoholic": false
 },
 {
-"strIngredient1": "Worcestershire sauce",
+"name": "Worcestershire sauce",
 "alcoholic": false
 },
 {
-"strIngredient1": "Ginger",
+"name": "Ginger",
 "alcoholic": false
 },
 {
-"strIngredient1": "Strawberries",
+"name": "Strawberries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Chocolate syrup",
+"name": "Chocolate syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Yoghurt",
+"name": "Yoghurt",
 "alcoholic": false
 },
 {
-"strIngredient1": "Grape juice",
+"name": "Grape juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Orange",
+"name": "Orange",
 "alcoholic": false
 },
 {
-"strIngredient1": "Apple cider",
+"name": "Apple cider",
 "alcoholic": false
 },
 {
-"strIngredient1": "Banana",
+"name": "Banana",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mango",
+"name": "Mango",
 "alcoholic": false
 },
 {
-"strIngredient1": "Soy milk",
+"name": "Soy milk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lime",
+"name": "Lime",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cantaloupe",
+"name": "Cantaloupe",
 "alcoholic": false
 },
 {
-"strIngredient1": "Grapes",
+"name": "Grapes",
 "alcoholic": false
 },
 {
-"strIngredient1": "Kiwi",
+"name": "Kiwi",
 "alcoholic": false
 },
 {
-"strIngredient1": "Tomato juice",
+"name": "Tomato juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cocoa powder",
+"name": "Cocoa powder",
 "alcoholic": false
 },
 {
-"strIngredient1": "Chocolate",
+"name": "Chocolate",
 "alcoholic": false
 },
 {
-"strIngredient1": "Heavy cream",
+"name": "Heavy cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peach Vodka",
+"name": "Peach Vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Ouzo",
+"name": "Ouzo",
 "alcoholic": true
 },
 {
-"strIngredient1": "Coffee",
+"name": "Coffee",
 "alcoholic": false
 },
 {
-"strIngredient1": "Spiced rum",
+"name": "Spiced rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Water",
+"name": "Water",
 "alcoholic": false
 },
 {
-"strIngredient1": "Espresso",
+"name": "Espresso",
 "alcoholic": false
 },
 {
-"strIngredient1": "Angelica root",
+"name": "Angelica root",
 "alcoholic": false
 },
 {
-"strIngredient1": "Condensed milk",
+"name": "Condensed milk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Honey",
+"name": "Honey",
 "alcoholic": false
 },
 {
-"strIngredient1": "Whipping cream",
+"name": "Whipping cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Half-and-half",
+"name": "Half-and-half",
 "alcoholic": false
 },
 {
-"strIngredient1": "Bread",
+"name": "Bread",
 "alcoholic": false
 },
 {
-"strIngredient1": "Plums",
+"name": "Plums",
 "alcoholic": false
 },
 {
-"strIngredient1": "Johnnie Walker",
+"name": "Johnnie Walker",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla",
+"name": "Vanilla",
 "alcoholic": false
 },
 {
-"strIngredient1": "Apple",
+"name": "Apple",
 "alcoholic": false
 },
 {
-"strIngredient1": "Orange rum",
+"name": "Orange rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Everclear",
+"name": "Everclear",
 "alcoholic": true
 },
 {
-"strIngredient1": "Kool-Aid",
+"name": "Kool-Aid",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemonade",
+"name": "Lemonade",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cranberry juice",
+"name": "Cranberry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Eggnog",
+"name": "Eggnog",
 "alcoholic": true
 },
 {
-"strIngredient1": "Carbonated soft drink",
+"name": "Carbonated soft drink",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cloves",
+"name": "Cloves",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raisins",
+"name": "Raisins",
 "alcoholic": false
 },
 {
-"strIngredient1": "Almond",
+"name": "Almond",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pumpkin",
+"name": "Pumpkin",
 "alcoholic": false
 },
 {
-"strIngredient1": "Beer",
+"name": "Beer",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pineau des Charentes",
+"name": "Pineau des Charentes",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pink lemonade",
+"name": "Pink lemonade",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raspberry juice",
+"name": "Raspberry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sherbet",
+"name": "Sherbet",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peach nectar",
+"name": "Peach nectar",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon liqueur",
+"name": "Lemon liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Firewater",
+"name": "Firewater",
 "alcoholic": true
 },
 {
-"strIngredient1": "Absolut Citron",
+"name": "Absolut Citron",
 "alcoholic": true
 },
 {
-"strIngredient1": "Malibu rum",
+"name": "Malibu rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Midori melon liqueur",
+"name": "Midori melon liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "151 proof rum",
+"name": "151 proof rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Ice 101",
+"name": "Ice 101",
 "alcoholic": true
 },
 {
-"strIngredient1": "Bacardi Limon",
+"name": "Bacardi Limon",
 "alcoholic": true
 },
 {
-"strIngredient1": "Bailey's irish cream",
+"name": "Bailey's irish cream",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lager",
+"name": "Lager",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orange vodka",
+"name": "Orange vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Blue Curacao",
+"name": "Blue Curacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Absolut Vodka",
+"name": "Absolut Vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Jagermeister",
+"name": "Jagermeister",
 "alcoholic": true
 },
 {
-"strIngredient1": "Jack Daniels",
+"name": "Jack Daniels",
 "alcoholic": true
 },
 {
-"strIngredient1": "Seagram 7",
+"name": "Seagram 7",
 "alcoholic": true
 },
 {
-"strIngredient1": "Drambuie",
+"name": "Drambuie",
 "alcoholic": true
 },
 {
-"strIngredient1": "Whisky",
+"name": "Whisky",
 "alcoholic": true
 },
 {
-"strIngredient1": "White rum",
+"name": "White rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pisco",
+"name": "Pisco",
 "alcoholic": true
 },
 {
-"strIngredient1": "Irish cream",
+"name": "Irish cream",
 "alcoholic": true
 },
 {
-"strIngredient1": "Yukon Jack",
+"name": "Yukon Jack",
 "alcoholic": true
 },
 {
-"strIngredient1": "Ale",
+"name": "Ale",
 "alcoholic": true
 },
 {
-"strIngredient1": "Goldschlager",
+"name": "Goldschlager",
 "alcoholic": true
 },
 {
-"strIngredient1": "Butterscotch schnapps",
+"name": "Butterscotch schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Grand Marnier",
+"name": "Grand Marnier",
 "alcoholic": true
 },
 {
-"strIngredient1": "Aquavit",
+"name": "Aquavit",
 "alcoholic": true
 },
 {
-"strIngredient1": "Peachtree schnapps",
+"name": "Peachtree schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Absolut Kurant",
+"name": "Absolut Kurant",
 "alcoholic": true
 },
 {
-"strIngredient1": "Chambord raspberry liqueur",
+"name": "Chambord raspberry liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tia maria",
+"name": "Tia maria",
 "alcoholic": true
 },
 {
-"strIngredient1": "Chocolate liqueur",
+"name": "Chocolate liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Taboo",
+"name": "Taboo",
 "alcoholic": true
 },
 {
-"strIngredient1": "Frangelico",
+"name": "Frangelico",
 "alcoholic": true
 },
 {
-"strIngredient1": "Barenjager",
+"name": "Barenjager",
 "alcoholic": true
 },
 {
-"strIngredient1": "Hpnotiq",
+"name": "Hpnotiq",
 "alcoholic": true
 },
 {
-"strIngredient1": "Coca-Cola",
+"name": "Coca-Cola",
 "alcoholic": false
 },
 {
-"strIngredient1": "Tuaca",
+"name": "Tuaca",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cranberry vodka",
+"name": "Cranberry vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Angostura bitters",
+"name": "Angostura bitters",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tang",
+"name": "Tang",
 "alcoholic": false
 },
 {
-"strIngredient1": "Tropicana",
+"name": "Tropicana",
 "alcoholic": false
 },
 {
-"strIngredient1": "Grain alcohol",
+"name": "Grain alcohol",
 "alcoholic": true
 },
 {
-"strIngredient1": "George Dickel",
+"name": "George Dickel",
 "alcoholic": true
 },
 {
-"strIngredient1": "Schnapps",
+"name": "Schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cider",
+"name": "Cider",
 "alcoholic": false
 },
 {
-"strIngredient1": "Aftershock",
+"name": "Aftershock",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sprite",
+"name": "Sprite",
 "alcoholic": false
 },
 {
-"strIngredient1": "Rumple Minze",
+"name": "Rumple Minze",
 "alcoholic": true
 },
 {
-"strIngredient1": "Key Largo schnapps",
+"name": "Key Largo schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pisang Ambon",
+"name": "Pisang Ambon",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pernod",
+"name": "Pernod",
 "alcoholic": true
 },
 {
-"strIngredient1": "7-Up",
+"name": "7-Up",
 "alcoholic": false
 },
 {
-"strIngredient1": "Limeade",
+"name": "Limeade",
 "alcoholic": false
 },
 {
-"strIngredient1": "Gold rum",
+"name": "Gold rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Wild Turkey",
+"name": "Wild Turkey",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cointreau",
+"name": "Cointreau",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lime vodka",
+"name": "Lime vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Razzmatazz",
+"name": "Razzmatazz",
 "alcoholic": true
 },
 {
-"strIngredient1": "Maraschino cherry juice",
+"name": "Maraschino cherry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Creme de Cassis",
+"name": "Creme de Cassis",
 "alcoholic": true
 },
 {
-"strIngredient1": "Zima",
+"name": "Zima",
 "alcoholic": true
 },
 {
-"strIngredient1": "Crown Royal",
+"name": "Crown Royal",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cardamom",
+"name": "Cardamom",
 "alcoholic": false
 },
 {
-"strIngredient1": "Orange Curacao",
+"name": "Orange Curacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tabasco sauce",
+"name": "Tabasco sauce",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peach liqueur",
+"name": "Peach liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Curacao",
+"name": "Curacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cherry Heering",
+"name": "Cherry Heering",
 "alcoholic": true
 },
 {
-"strIngredient1": "Fruit punch",
+"name": "Fruit punch",
 "alcoholic": false
 },
 {
-"strIngredient1": "Fernet Branca",
+"name": "Fernet Branca",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vermouth",
+"name": "Vermouth",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cherry juice",
+"name": "Cherry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cinnamon schnapps",
+"name": "Cinnamon schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orange peel",
+"name": "Orange peel",
 "alcoholic": false
 },
 {
-"strIngredient1": "Advocaat",
+"name": "Advocaat",
 "alcoholic": true
 },
 {
-"strIngredient1": "Charleston Follies",
+"name": "Charleston Follies",
 "alcoholic": true
 },
 {
-"strIngredient1": "Clamato juice",
+"name": "Clamato juice",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sour mix",
+"name": "Sour mix",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apfelkorn",
+"name": "Apfelkorn",
 "alcoholic": true
 },
 {
-"strIngredient1": "Green Chartreuse",
+"name": "Green Chartreuse",
 "alcoholic": true
 },
 {
-"strIngredient1": "Root beer schnapps",
+"name": "Root beer schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Coconut rum",
+"name": "Coconut rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Raspberry schnapps",
+"name": "Raspberry schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Black Sambuca",
+"name": "Black Sambuca",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla vodka",
+"name": "Vanilla vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Root beer",
+"name": "Root beer",
 "alcoholic": false
 },
 {
-"strIngredient1": "Absolut Peppar",
+"name": "Absolut Peppar",
 "alcoholic": true
 },
 {
-"strIngredient1": "Parfait d'Amour",
+"name": "Parfait d'Amour",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla schnapps",
+"name": "Vanilla schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orange liqueur",
+"name": "Orange liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Kiwi liqueur",
+"name": "Kiwi liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Hot chocolate",
+"name": "Hot chocolate",
 "alcoholic": false
 },
 {
-"strIngredient1": "Jello",
+"name": "Jello",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mountain Dew",
+"name": "Mountain Dew",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blueberry schnapps",
+"name": "Blueberry schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Maui",
+"name": "Maui",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tennessee whiskey",
+"name": "Tennessee whiskey",
 "alcoholic": true
 },
 {
-"strIngredient1": "White chocolate liqueur",
+"name": "White chocolate liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cream of coconut",
+"name": "Cream of coconut",
 "alcoholic": false
 },
 {
-"strIngredient1": "Citrus vodka",
+"name": "Citrus vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Fruit juice",
+"name": "Fruit juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Campari",
+"name": "Campari",
 "alcoholic": true
 },
 {
-"strIngredient1": "Corona",
+"name": "Corona",
 "alcoholic": true
 },
 {
-"strIngredient1": "Chocolate ice-cream",
+"name": "Chocolate ice-cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Jim Beam",
+"name": "Jim Beam",
 "alcoholic": true
 },
 {
-"strIngredient1": "Hawaiian Punch",
+"name": "Hawaiian Punch",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackberry schnapps",
+"name": "Blackberry schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Chocolate milk",
+"name": "Chocolate milk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Watermelon schnapps",
+"name": "Watermelon schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Beef bouillon",
+"name": "Beef bouillon",
 "alcoholic": false
 },
 {
-"strIngredient1": "Dr. Pepper",
+"name": "Dr. Pepper",
 "alcoholic": false
 },
 {
-"strIngredient1": "Iced tea",
+"name": "Iced tea",
 "alcoholic": false
 },
 {
-"strIngredient1": "Daiquiri mix",
+"name": "Daiquiri mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Hot Damn",
+"name": "Hot Damn",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pear soft drink",
+"name": "Pear soft drink",
 "alcoholic": false
 },
 {
-"strIngredient1": "Club soda",
+"name": "Club soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "Benedictine",
+"name": "Benedictine",
 "alcoholic": true
 },
 {
-"strIngredient1": "Dark Creme de Cacao",
+"name": "Dark Creme de Cacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Mad Dog 20/20",
+"name": "Mad Dog 20/20",
 "alcoholic": true
 },
 {
-"strIngredient1": "Black rum",
+"name": "Black rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cherry Cola",
+"name": "Cherry Cola",
 "alcoholic": false
 },
 {
-"strIngredient1": "Absinthe",
+"name": "Absinthe",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sparkling white wine",
+"name": "Sparkling white wine",
 "alcoholic": true
 },
 {
-"strIngredient1": "Lemon gin",
+"name": "Lemon gin",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tequila Rose",
+"name": "Tequila Rose",
 "alcoholic": true
 },
 {
-"strIngredient1": "Guinness stout",
+"name": "Guinness stout",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orange soda",
+"name": "Orange soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "Wildberry schnapps",
+"name": "Wildberry schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cappuccino",
+"name": "Cappuccino",
 "alcoholic": false
 },
 {
-"strIngredient1": "Snapple",
+"name": "Snapple",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon-lime soda",
+"name": "Lemon-lime soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "Godiva liqueur",
+"name": "Godiva liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Apple-cranberry juice",
+"name": "Apple-cranberry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Schweppes Russchian",
+"name": "Schweppes Russchian",
 "alcoholic": false
 },
 {
-"strIngredient1": "Piña Colada",
+"name": "Piña Colada",
 "alcoholic": true
 },
 {
-"strIngredient1": "Melon vodka",
+"name": "Melon vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Sour Apple Pucker",
+"name": "Sour Apple Pucker",
 "alcoholic": true
 },
 {
-"strIngredient1": "Raspberry vodka",
+"name": "Raspberry vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "coconut milk",
+"name": "coconut milk",
 "alcoholic": false
 },
 {
-"strIngredient1": "Ginger beer",
+"name": "Ginger beer",
 "alcoholic": true
 },
 {
-"strIngredient1": "Light cream",
+"name": "Light cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Amer Picon",
+"name": "Amer Picon",
 "alcoholic": true
 },
 {
-"strIngredient1": "Powdered sugar",
+"name": "Powdered sugar",
 "alcoholic": false
 },
 {
-"strIngredient1": "Wine",
+"name": "Wine",
 "alcoholic": true
 },
 {
-"strIngredient1": "Maraschino liqueur",
+"name": "Maraschino liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Molasses",
+"name": "Molasses",
 "alcoholic": false
 },
 {
-"strIngredient1": "Kirschwasser",
+"name": "Kirschwasser",
 "alcoholic": true
 },
 {
-"strIngredient1": "Strega",
+"name": "Strega",
 "alcoholic": true
 },
 {
-"strIngredient1": "Caramel liqueur",
+"name": "Caramel liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Passion fruit syrup",
+"name": "Passion fruit syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Tonic water",
+"name": "Tonic water",
 "alcoholic": false
 },
 {
-"strIngredient1": "Maraschino cherry",
+"name": "Maraschino cherry",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lillet",
+"name": "Lillet",
 "alcoholic": true
 },
 {
-"strIngredient1": "Tawny port",
+"name": "Tawny port",
 "alcoholic": true
 },
 {
-"strIngredient1": "Orgeat syrup",
+"name": "Orgeat syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raspberry syrup",
+"name": "Raspberry syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "White port",
+"name": "White port",
 "alcoholic": true
 },
 {
-"strIngredient1": "Madeira",
+"name": "Madeira",
 "alcoholic": true
 },
 {
-"strIngredient1": "Maple syrup",
+"name": "Maple syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Forbidden Fruit",
+"name": "Forbidden Fruit",
 "alcoholic": true
 },
 {
-"strIngredient1": "Egg white",
+"name": "Egg white",
 "alcoholic": false
 },
 {
-"strIngredient1": "Creme de Almond",
+"name": "Creme de Almond",
 "alcoholic": true
 },
 {
-"strIngredient1": "Carrot",
+"name": "Carrot",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackberries",
+"name": "Blackberries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Butter",
+"name": "Butter",
 "alcoholic": false
 },
 {
-"strIngredient1": "Bitter lemon",
+"name": "Bitter lemon",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mint syrup",
+"name": "Mint syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Almond flavoring",
+"name": "Almond flavoring",
 "alcoholic": false
 },
 {
-"strIngredient1": "Allspice",
+"name": "Allspice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Papaya",
+"name": "Papaya",
 "alcoholic": false
 },
 {
-"strIngredient1": "Fruit",
+"name": "Fruit",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cinnamon",
+"name": "Cinnamon",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coriander",
+"name": "Coriander",
 "alcoholic": false
 },
 {
-"strIngredient1": "Wormwood",
+"name": "Wormwood",
 "alcoholic": true
 },
 {
-"strIngredient1": "Vanilla extract",
+"name": "Vanilla extract",
 "alcoholic": false
 },
 {
-"strIngredient1": "Corn syrup",
+"name": "Corn syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coconut syrup",
+"name": "Coconut syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Banana rum",
+"name": "Banana rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Ice-cream",
+"name": "Ice-cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coconut cream",
+"name": "Coconut cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "White grape juice",
+"name": "White grape juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cherry liqueur",
+"name": "Cherry liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pineapple-orange-banana juice",
+"name": "Pineapple-orange-banana juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raspberry cordial",
+"name": "Raspberry cordial",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon soda",
+"name": "Lemon soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "St. Hallvard",
+"name": "St. Hallvard",
 "alcoholic": true
 },
 {
-"strIngredient1": "Thunderbird",
+"name": "Thunderbird",
 "alcoholic": true
 },
 {
-"strIngredient1": "Celery salt",
+"name": "Celery salt",
 "alcoholic": false
 },
 {
-"strIngredient1": "Hoopers Hooch",
+"name": "Hoopers Hooch",
 "alcoholic": true
 },
 {
-"strIngredient1": "Erin Cream",
+"name": "Erin Cream",
 "alcoholic": true
 },
 {
-"strIngredient1": "Rose's sweetened lime juice",
+"name": "Rose's sweetened lime juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Wild Spirit liqueur",
+"name": "Wild Spirit liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Mandarine Napoleon",
+"name": "Mandarine Napoleon",
 "alcoholic": true
 },
 {
-"strIngredient1": "Crystal light",
+"name": "Crystal light",
 "alcoholic": false
 },
 {
-"strIngredient1": "Acerola",
+"name": "Acerola",
 "alcoholic": false
 },
 {
-"strIngredient1": "Margarita mix",
+"name": "Margarita mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pear",
+"name": "Pear",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pickled pepper",
+"name": "Pickled pepper",
 "alcoholic": false
 },
 {
-"strIngredient1": "Fanta",
+"name": "Fanta",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackcurrant cordial",
+"name": "Blackcurrant cordial",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sarsaparilla",
+"name": "Sarsaparilla",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cynar",
+"name": "Cynar",
 "alcoholic": true
 },
 {
-"strIngredient1": "Purple passion",
+"name": "Purple passion",
 "alcoholic": true
 },
 {
-"strIngredient1": "Irish Mist",
+"name": "Irish Mist",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pineapple vodka",
+"name": "Pineapple vodka",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pina colada mix",
+"name": "Pina colada mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Surge",
+"name": "Surge",
 "alcoholic": false
 },
 {
-"strIngredient1": "Tropical fruit schnapps",
+"name": "Tropical fruit schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Peychaud bitters",
+"name": "Peychaud bitters",
 "alcoholic": true
 },
 {
-"strIngredient1": "Candy",
+"name": "Candy",
 "alcoholic": false
 },
 {
-"strIngredient1": "Strawberry juice",
+"name": "Strawberry juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raspberry jam",
+"name": "Raspberry jam",
 "alcoholic": false
 },
 {
-"strIngredient1": "Grape soda",
+"name": "Grape soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cranberry liqueur",
+"name": "Cranberry liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Nutmeg",
+"name": "Nutmeg",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cherries",
+"name": "Cherries",
 "alcoholic": false
 },
 {
-"strIngredient1": "Saurer apfel",
+"name": "Saurer apfel",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cinzano Orancio",
+"name": "Cinzano Orancio",
 "alcoholic": true
 },
 {
-"strIngredient1": "Fresca",
+"name": "Fresca",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peach juice",
+"name": "Peach juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Passoa",
+"name": "Passoa",
 "alcoholic": true
 },
 {
-"strIngredient1": "Mezcal",
+"name": "Mezcal",
 "alcoholic": true
 },
 {
-"strIngredient1": "Green Curacao",
+"name": "Green Curacao",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cola",
+"name": "Cola",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lime liqueur",
+"name": "Lime liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Collins mix",
+"name": "Collins mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Hazelnut liqueur",
+"name": "Hazelnut liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Grape schnapps",
+"name": "Grape schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Bloody mary mix",
+"name": "Bloody mary mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Watermelon liqueur",
+"name": "Watermelon liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pepsi Cola",
+"name": "Pepsi Cola",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sunny delight",
+"name": "Sunny delight",
 "alcoholic": false
 },
 {
-"strIngredient1": "Raspberry liqueur",
+"name": "Raspberry liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Grapefruit-lemon soda",
+"name": "Grapefruit-lemon soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "Soy sauce",
+"name": "Soy sauce",
 "alcoholic": false
 },
 {
-"strIngredient1": "Guava juice",
+"name": "Guava juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mello Yello",
+"name": "Mello Yello",
 "alcoholic": false
 },
 {
-"strIngredient1": "Mango juice",
+"name": "Mango juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Safari",
+"name": "Safari",
 "alcoholic": true
 },
 {
-"strIngredient1": "Fruit cocktail",
+"name": "Fruit cocktail",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pear liqueur",
+"name": "Pear liqueur",
 "alcoholic": true
 },
 {
-"strIngredient1": "Gatorade",
+"name": "Gatorade",
 "alcoholic": false
 },
 {
-"strIngredient1": "Jalapeno",
+"name": "Jalapeno",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lemon-lime mix",
+"name": "Lemon-lime mix",
 "alcoholic": false
 },
 {
-"strIngredient1": "Whipped cream",
+"name": "Whipped cream",
 "alcoholic": false
 },
 {
-"strIngredient1": "Olive",
+"name": "Olive",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cherry",
+"name": "Cherry",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cocktail onion",
+"name": "Cocktail onion",
 "alcoholic": false
 },
 {
-"strIngredient1": "Papaya juice",
+"name": "Papaya juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cayenne pepper",
+"name": "Cayenne pepper",
 "alcoholic": false
 },
 {
-"strIngredient1": "Clove",
+"name": "Clove",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cumin seed",
+"name": "Cumin seed",
 "alcoholic": false
 },
 {
-"strIngredient1": "Aperol",
+"name": "Aperol",
 "alcoholic": true
 },
 {
-"strIngredient1": "Cornstarch",
+"name": "Cornstarch",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coffeemate",
+"name": "Coffeemate",
 "alcoholic": false
 },
 {
-"strIngredient1": "Anise",
+"name": "Anise",
 "alcoholic": false
 },
 {
-"strIngredient1": "Apricot",
+"name": "Apricot",
 "alcoholic": false
 },
 {
-"strIngredient1": "Yeast",
+"name": "Yeast",
 "alcoholic": false
 },
 {
-"strIngredient1": "Guava syrup",
+"name": "Guava syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cucumber",
+"name": "Cucumber",
 "alcoholic": false
 },
 {
-"strIngredient1": "Fruit syrup",
+"name": "Fruit syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackcurrant squash",
+"name": "Blackcurrant squash",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pear juice",
+"name": "Pear juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "West Coast Cooler",
+"name": "West Coast Cooler",
 "alcoholic": false
 },
 {
-"strIngredient1": "Nuts",
+"name": "Nuts",
 "alcoholic": false
 },
 {
-"strIngredient1": "Chili sauce",
+"name": "Chili sauce",
 "alcoholic": false
 },
 {
-"strIngredient1": "Strawberry syrup",
+"name": "Strawberry syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Schweppes Lemon"
+"name": "Schweppes Lemon"
 },
 {
-"strIngredient1": "Food coloring",
+"name": "Food coloring",
 "alcoholic": false
 },
 {
-"strIngredient1": "Vanilla syrup",
+"name": "Vanilla syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Apricot nectar",
+"name": "Apricot nectar",
 "alcoholic": false
 },
 {
-"strIngredient1": "Black pepper",
+"name": "Black pepper",
 "alcoholic": false
 },
 {
-"strIngredient1": "Almond syrup",
+"name": "Almond syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Jose Cuervo",
+"name": "Jose Cuervo",
 "alcoholic": true
 },
 {
-"strIngredient1": "Pepper sauce",
+"name": "Pepper sauce",
 "alcoholic": false
 },
 {
-"strIngredient1": "Olive juice",
+"name": "Olive juice",
 "alcoholic": false
 },
 {
-"strIngredient1": "Coconut",
+"name": "Coconut",
 "alcoholic": false
 },
 {
-"strIngredient1": "Orange spiral",
+"name": "Orange spiral",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peach",
+"name": "Peach",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lime peel",
+"name": "Lime peel",
 "alcoholic": false
 },
 {
-"strIngredient1": "Rosewater",
+"name": "Rosewater",
 "alcoholic": false
 },
 {
-"strIngredient1": "Asafoetida",
+"name": "Asafoetida",
 "alcoholic": false
 },
 {
-"strIngredient1": "Sirup of roses",
+"name": "Sirup of roses",
 "alcoholic": false
 },
 {
-"strIngredient1": "Fennel seeds",
+"name": "Fennel seeds",
 "alcoholic": false
 },
 {
-"strIngredient1": "Licorice root",
+"name": "Licorice root",
 "alcoholic": false
 },
 {
-"strIngredient1": "Peppermint extract",
+"name": "Peppermint extract",
 "alcoholic": false
 },
 {
-"strIngredient1": "Glycerine",
+"name": "Glycerine",
 "alcoholic": false
 },
 {
-"strIngredient1": "Pineapple rum",
+"name": "Pineapple rum",
 "alcoholic": true
 },
 {
-"strIngredient1": "Squirt",
+"name": "Squirt",
 "alcoholic": false
 },
 {
-"strIngredient1": "Lingonberry jam",
+"name": "Lingonberry jam",
 "alcoholic": false
 },
 {
-"strIngredient1": "Celery",
+"name": "Celery",
 "alcoholic": false
 },
 {
-"strIngredient1": "Blackcurrant schnapps",
+"name": "Blackcurrant schnapps",
 "alcoholic": true
 },
 {
-"strIngredient1": "Banana syrup",
+"name": "Banana syrup",
 "alcoholic": false
 },
 {
-"strIngredient1": "Cream soda",
+"name": "Cream soda",
 "alcoholic": false
 },
 {
-"strIngredient1": "squeezed orange",
+"name": "squeezed orange",
 "alcoholic": false
 }
 ]

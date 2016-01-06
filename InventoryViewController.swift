@@ -12,14 +12,31 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var alcoholicTableView: UITableView!
     
-    
     @IBOutlet weak var nonAlcoholicTableView: UITableView!
     
+    var alcoholicDataSource = [Ingredient]()
+    var nonAlcoholicDataSource = [Ingredient]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        JsonSerializer.queryRecipes()
+        splitDataSource()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.alcoholicTableView.reloadData()
+        self.nonAlcoholicTableView.reloadData()
+    }
+    
+    func splitDataSource(){
+        for item in IngredientController.sharedController.myPantry{
+            if item.alcoholic{
+                alcoholicDataSource.append(item)
+            } else {
+                nonAlcoholicDataSource.append(item)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,20 +45,27 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if tableView == alcoholicTableView{
+            return alcoholicDataSource.count
+        } else {
+            return nonAlcoholicDataSource.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if tableView == alcoholicTableView {
             let cell = tableView.dequeueReusableCellWithIdentifier("alcoholic", forIndexPath: indexPath)
+            let ingredient = alcoholicDataSource[indexPath.row]
             
-            cell.textLabel?.text = "Vodka"
+            cell.textLabel?.text = ingredient.name
             
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath)
             
-            cell.textLabel?.text = "salt"
+            let ingredient = nonAlcoholicDataSource[indexPath.row]
+            
+            cell.textLabel?.text = ingredient.name
             
             return cell
         }
