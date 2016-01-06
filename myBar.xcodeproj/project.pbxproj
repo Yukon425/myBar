@@ -20,6 +20,7 @@
 		1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F99C5731C3D889E00C9FC44 /* drinkList.json */; };
 		54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */; };
 		54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D501C3C5CB600EFCBFC /* Recipe.swift */; };
+		54509D5A1C3DB0D800EFCBFC /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D591C3DB0D800EFCBFC /* RecipeController.swift */; };
 		83A3EC411C3D814900D1E03E /* IngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EC401C3D814900D1E03E /* IngredientController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		1F99C5731C3D889E00C9FC44 /* drinkList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = drinkList.json; sourceTree = "<group>"; };
 		54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		54509D501C3C5CB600EFCBFC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		54509D591C3DB0D800EFCBFC /* RecipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeController.swift; path = myBar/RecipeController.swift; sourceTree = "<group>"; };
 		83A3EC401C3D814900D1E03E /* IngredientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 		1F5A49821C3DAAB400EAE099 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				54509D591C3DB0D800EFCBFC /* RecipeController.swift */,
 				1F5A497C1C3D955600EAE099 /* JSONController.swift */,
 				83A3EC401C3D814900D1E03E /* IngredientController.swift */,
 			);
@@ -202,6 +205,7 @@
 				1F5974F21C3B3AFB00CD1D2F /* AppDelegate.swift in Sources */,
 				1F5A497D1C3D955600EAE099 /* JSONController.swift in Sources */,
 				1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */,
+				54509D5A1C3DB0D800EFCBFC /* RecipeController.swift in Sources */,
 				83A3EC411C3D814900D1E03E /* IngredientController.swift in Sources */,
 				54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */,
 				54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */,

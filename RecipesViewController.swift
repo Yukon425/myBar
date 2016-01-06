@@ -14,6 +14,12 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let inventory = RecipeController.sharedInstance.mockIngredients
+        let recipes = RecipeController.sharedInstance.mockRecipes
+        let possibleRecipes = RecipeController.sharedInstance.fitlerRecipes(inventory, recipes: recipes)
+        
+        print(possibleRecipes)
     }
 
     override func didReceiveMemoryWarning() {
