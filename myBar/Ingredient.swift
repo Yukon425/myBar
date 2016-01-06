@@ -16,6 +16,11 @@ class Ingredient: Equatable {
     var alcoholic: Bool
     var name: String
     
+    init(alcoholic: Bool, name: String) {
+        self.alcoholic = alcoholic
+        self.name = name
+    }
+    
     init?(dictionary: [String:AnyObject]) {
         
         guard let name = dictionary["name"] as? String,
