@@ -8,7 +8,7 @@
 
 import Foundation
 
-class JsonSerializer {
+class JSONController {
     
     static func queryRecipes(){
         
