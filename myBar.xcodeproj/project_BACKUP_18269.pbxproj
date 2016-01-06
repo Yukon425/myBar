@@ -71,9 +71,12 @@
 		1F5974F01C3B3AFB00CD1D2F /* myBar */ = {
 			isa = PBXGroup;
 			children = (
-				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
+<<<<<<< HEAD
 				54509D551C3C616B00EFCBFC /* RecipeController.swift */,
 				54509D531C3C5F2200EFCBFC /* NetworkController.swift */,
+=======
+				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
+>>>>>>> 5a5543fc292b4c9a486c6a81fcd388664760240e
 				1F5975031C3B3E1800CD1D2F /* InventoryViewController.swift */,
 				1F5975051C3B3E2A00CD1D2F /* RecipesViewController.swift */,
 				1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */,
