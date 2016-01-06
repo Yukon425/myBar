@@ -12,7 +12,6 @@ class Ingredient {
     
     var alcoholic: Bool
     var name: String
-    var amount: String?
     
     init?(dictionary: [String:AnyObject]) {
         
