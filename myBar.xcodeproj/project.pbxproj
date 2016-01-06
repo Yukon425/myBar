@@ -16,6 +16,7 @@
 		1F5975081C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */; };
 		1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */; };
 		1F5A497D1C3D955600EAE099 /* JSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A497C1C3D955600EAE099 /* JSONController.swift */; };
+		1F5A497F1C3DA8E800EAE099 /* ingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A497E1C3DA8E800EAE099 /* ingredients.json */; };
 		1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F99C5731C3D889E00C9FC44 /* drinkList.json */; };
 		54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */; };
 		54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D501C3C5CB600EFCBFC /* Recipe.swift */; };
@@ -34,6 +35,7 @@
 		1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeDirectionsViewController.swift; path = ../RecipeDirectionsViewController.swift; sourceTree = "<group>"; };
 		1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddIngredientViewController.swift; path = ../AddIngredientViewController.swift; sourceTree = "<group>"; };
 		1F5A497C1C3D955600EAE099 /* JSONController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONController.swift; sourceTree = "<group>"; };
+		1F5A497E1C3DA8E800EAE099 /* ingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ingredients.json; sourceTree = "<group>"; };
 		1F99C5731C3D889E00C9FC44 /* drinkList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = drinkList.json; sourceTree = "<group>"; };
 		54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		54509D501C3C5CB600EFCBFC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
@@ -54,8 +56,9 @@
 		1F5974E51C3B3AFB00CD1D2F = {
 			isa = PBXGroup;
 			children = (
-				1F5A497C1C3D955600EAE099 /* JSONController.swift */,
-				83A3EC401C3D814900D1E03E /* IngredientController.swift */,
+				1F5A49821C3DAAB400EAE099 /* Controllers */,
+				1F5A49811C3DA94F00EAE099 /* Views */,
+				1F5A49801C3DA8EE00EAE099 /* JSON */,
 				54509D521C3C5E8800EFCBFC /* Models */,
 				1F5974F01C3B3AFB00CD1D2F /* myBar */,
 				1F5974EF1C3B3AFB00CD1D2F /* Products */,
@@ -73,11 +76,6 @@
 		1F5974F01C3B3AFB00CD1D2F /* myBar */ = {
 			isa = PBXGroup;
 			children = (
-				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
-				1F5975031C3B3E1800CD1D2F /* InventoryViewController.swift */,
-				1F5975051C3B3E2A00CD1D2F /* RecipesViewController.swift */,
-				1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */,
-				1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */,
 				1F5974F11C3B3AFB00CD1D2F /* AppDelegate.swift */,
 				1F5974F51C3B3AFB00CD1D2F /* Main.storyboard */,
 				1F5974F81C3B3AFB00CD1D2F /* Assets.xcassets */,
@@ -85,6 +83,37 @@
 				1F5974FD1C3B3AFB00CD1D2F /* Info.plist */,
 			);
 			path = myBar;
+			sourceTree = "<group>";
+		};
+		1F5A49801C3DA8EE00EAE099 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A497E1C3DA8E800EAE099 /* ingredients.json */,
+				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
+			);
+			name = JSON;
+			path = myBar;
+			sourceTree = "<group>";
+		};
+		1F5A49811C3DA94F00EAE099 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F5975031C3B3E1800CD1D2F /* InventoryViewController.swift */,
+				1F5975051C3B3E2A00CD1D2F /* RecipesViewController.swift */,
+				1F5975071C3B3E3D00CD1D2F /* RecipeDirectionsViewController.swift */,
+				1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */,
+			);
+			name = Views;
+			path = myBar;
+			sourceTree = "<group>";
+		};
+		1F5A49821C3DAAB400EAE099 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F5A497C1C3D955600EAE099 /* JSONController.swift */,
+				83A3EC401C3D814900D1E03E /* IngredientController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		54509D521C3C5E8800EFCBFC /* Models */ = {
@@ -158,6 +187,7 @@
 				1F5974FC1C3B3AFB00CD1D2F /* LaunchScreen.storyboard in Resources */,
 				1F5974F91C3B3AFB00CD1D2F /* Assets.xcassets in Resources */,
 				1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */,
+				1F5A497F1C3DA8E800EAE099 /* ingredients.json in Resources */,
 				1F5974F71C3B3AFB00CD1D2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,13 @@ import Foundation
 
 class JsonSerializer {
     
-    func fetchRecipe(){
+    static func queryRecipes(){
         
         var recipes: [Recipe] = []
         
-        guard let json = NSData(contentsOfFile: "/Users/wilks/Projects/fuzzySearch/fuzzySearch/dictionary.json") else {return}
+        guard let path = NSBundle.mainBundle().pathForResource("drinkList", ofType: "json") else {return}
+        
+        guard let json = NSData(contentsOfFile: path) else {return}
         
         let object: AnyObject
         
@@ -34,7 +36,6 @@ class JsonSerializer {
                 recipes.append(recipeObject)
             }
         }
-        
     }
-    
+        
 }
