@@ -13,11 +13,11 @@ class Recipe {
     var ingredients = [String : String]()
     var instructions: String
     
-//    init(name: String, ingredients: [Ingredient], directions: String) {
-//        self.name = name
-//        self.ingredients = ingredients
-//        self.directions = directions
-//    }
+    init(name: String, ingredients: [String : String], instructions: String) {
+        self.name = name
+        self.ingredients = ingredients
+        self.instructions = instructions
+    }
     
     init?(dic: [String : AnyObject]) {
         guard let name = dic["name"] as? String,
