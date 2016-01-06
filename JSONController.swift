@@ -1,15 +1,15 @@
 //
-//  JSONController.swift
+//  JsonController.swift
 //  myBar
 //
 //  Created by Michael Wilkowski on 1/6/16.
 //  Copyright © 2016 JustWilks. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class JSONController {
-        
+class JsonSerializer {
+    
     func fetchRecipe(){
         
         var recipes: [Recipe] = []
@@ -36,5 +36,5 @@ class JSONController {
         }
         
     }
-
+    
 }
