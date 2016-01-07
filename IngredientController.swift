@@ -35,9 +35,6 @@ class IngredientController {
             myPantry.removeAtIndex(ingredientIndex)
             self.saveToPersistentStorage()
         }
-        
-        
-        
     }
     
     func loadFromPersistentStorage() {
