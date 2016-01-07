@@ -24,7 +24,7 @@
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipe" id="IDM-XV-Ney">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IDM-XV-Ney" id="ezj-6Z-aZq">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -39,18 +39,33 @@
                                     <outlet property="delegate" destination="dyG-Rw-RQi" id="FRe-NH-Zzo"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF2-GH-zM2">
+                                <rect key="frame" x="238" y="492" width="125" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.4941176471" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="PNi-mZ-uK8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="  Random  "/>
+                                <connections>
+                                    <action selector="randomButtonTapped:" destination="dyG-Rw-RQi" eventType="touchUpInside" id="xcW-rH-dCD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="CzJ-vo-tJ2" secondAttribute="trailing" constant="-20" id="Bqx-aQ-m74"/>
                             <constraint firstItem="CzJ-vo-tJ2" firstAttribute="leading" secondItem="eGJ-fp-pzK" secondAttribute="leadingMargin" constant="-20" id="Udn-nG-J73"/>
+                            <constraint firstItem="f8I-Nf-eZI" firstAttribute="top" secondItem="tF2-GH-zM2" secondAttribute="bottom" constant="18" id="dnX-gu-tgN"/>
                             <constraint firstItem="CzJ-vo-tJ2" firstAttribute="top" secondItem="Ssb-B9-CW5" secondAttribute="bottom" constant="-64" id="fdz-KA-7Vl"/>
                             <constraint firstItem="f8I-Nf-eZI" firstAttribute="top" secondItem="CzJ-vo-tJ2" secondAttribute="bottom" id="gwl-Qq-qeE"/>
+                            <constraint firstItem="tF2-GH-zM2" firstAttribute="centerX" secondItem="eGJ-fp-pzK" secondAttribute="centerX" id="mxm-YW-MVg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sbA-g0-Gyj"/>
                     <connections>
-                        <outlet property="tableViewOutlet" destination="CzJ-vo-tJ2" id="TNW-lf-BYh"/>
+                        <outlet property="randomButtonOutlet" destination="tF2-GH-zM2" id="JI4-zo-wVT"/>
+                        <outlet property="tableViewOutlet" destination="CzJ-vo-tJ2" id="fHx-ja-sII"/>
                         <segue destination="cjm-Vx-5lh" kind="show" identifier="toDetails" id="b6f-2y-L4r"/>
                     </connections>
                 </viewController>
@@ -167,8 +182,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-U4-c6I">
+                                <rect key="frame" x="0.0" y="347" width="600" height="204"/>
+                                <color key="backgroundColor" red="0.0" green="0.4941176471" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-LX-YQZ">
-                                <rect key="frame" x="0.0" y="113" width="600" height="215"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="215"/>
                                 <color key="backgroundColor" red="0.0" green="0.49411764705882355" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ingredients" id="NHj-Y0-Deb">
@@ -187,24 +210,17 @@
                                     <outlet property="delegate" destination="cjm-Vx-5lh" id="dcw-bC-yMg"/>
                                 </connections>
                             </tableView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-U4-c6I">
-                                <rect key="frame" x="0.0" y="336" width="600" height="215"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.4941176471" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0H5-U4-c6I" firstAttribute="leading" secondItem="vVe-rc-80g" secondAttribute="leadingMargin" constant="-20" id="5iY-P6-ZbH"/>
-                            <constraint firstItem="0H5-U4-c6I" firstAttribute="top" secondItem="OXS-LX-YQZ" secondAttribute="bottom" constant="8" id="GD6-Ni-QYJ"/>
-                            <constraint firstItem="2ZL-hq-VkR" firstAttribute="top" secondItem="0H5-U4-c6I" secondAttribute="bottom" id="J9b-Da-xpf"/>
-                            <constraint firstItem="0H5-U4-c6I" firstAttribute="height" secondItem="OXS-LX-YQZ" secondAttribute="height" id="aat-Jg-HwN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OXS-LX-YQZ" secondAttribute="trailing" constant="-20" id="c0t-5v-6U0"/>
-                            <constraint firstItem="OXS-LX-YQZ" firstAttribute="top" secondItem="U8P-il-rcD" secondAttribute="bottom" constant="49" id="g4K-Ri-bdn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0H5-U4-c6I" secondAttribute="trailing" constant="-20" id="gWF-r8-GGm"/>
-                            <constraint firstItem="OXS-LX-YQZ" firstAttribute="leading" secondItem="vVe-rc-80g" secondAttribute="leadingMargin" constant="-20" id="htb-0e-6sY"/>
+                            <constraint firstItem="2ZL-hq-VkR" firstAttribute="top" secondItem="0H5-U4-c6I" secondAttribute="bottom" id="3Qx-uz-i6t"/>
+                            <constraint firstItem="OXS-LX-YQZ" firstAttribute="top" secondItem="U8P-il-rcD" secondAttribute="bottom" id="8ek-ny-2Cb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OXS-LX-YQZ" secondAttribute="trailing" constant="-20" id="9A0-gK-LmA"/>
+                            <constraint firstItem="OXS-LX-YQZ" firstAttribute="leading" secondItem="vVe-rc-80g" secondAttribute="leadingMargin" constant="-20" id="Np9-CN-Jnq"/>
+                            <constraint firstItem="0H5-U4-c6I" firstAttribute="top" secondItem="U8P-il-rcD" secondAttribute="bottom" constant="283" id="fni-5u-IYw"/>
+                            <constraint firstItem="2ZL-hq-VkR" firstAttribute="top" secondItem="OXS-LX-YQZ" secondAttribute="bottom" constant="272" id="jIw-3v-6zc"/>
+                            <constraint firstItem="0H5-U4-c6I" firstAttribute="leading" secondItem="vVe-rc-80g" secondAttribute="leadingMargin" constant="-20" id="t4L-Po-g5y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0H5-U4-c6I" secondAttribute="trailing" constant="-20" id="xPw-s7-n66"/>
                         </constraints>
                     </view>
                     <connections>
@@ -361,4 +377,5 @@
         <image name="Cocktail-30" width="30" height="30"/>
         <image name="Wine Bottle-30" width="30" height="30"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

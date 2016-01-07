@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipeDirectionsViewController: UIViewController {
+class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var myRecipe: Recipe?
     
@@ -41,6 +41,19 @@ class RecipeDirectionsViewController: UIViewController {
         //stuff
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+            return "Ingredients"
+    }
+    
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        header.contentView.backgroundColor = .lightColor()
+        header.textLabel?.textColor = .whiteColor()
+        header.layer.borderWidth = 1.75
+        header.layer.cornerRadius = 5.0
+        header.layer.borderColor = UIColor.whiteColor().CGColor
     }
 
 }

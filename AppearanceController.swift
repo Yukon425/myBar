@@ -27,6 +27,8 @@ class AppearanceController{
     class func setupAppearance() {
        // UINavigationBar.appearance().tintColor = .darkColor()
         UITabBar.appearance().tintColor = .whiteColor()
+        UIBarButtonItem.appearance().tintColor = .whiteColor()
+        
 
     }
 }

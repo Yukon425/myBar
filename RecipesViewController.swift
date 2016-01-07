@@ -13,18 +13,46 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     var recipeDataSource = [Recipe]()
     
     @IBOutlet weak var tableViewOutlet: UITableView!
+    @IBOutlet weak var randomButtonOutlet: UIButton!
     
+    @IBAction func randomButtonTapped(sender: AnyObject) {
+        if recipeDataSource.count > 0 {
+            presentRandomAlert()
+        }
+    }
+    
+    func presentRandomAlert(){
+        let number = arc4random_uniform(UInt32(recipeDataSource.count))
+        let recipe = recipeDataSource[Int(number)]
+        
+        let alert = UIAlertController(title: "Cocktail", message: recipe.name, preferredStyle: .Alert)
+        let tryAgain = UIAlertAction(title: "Retry", style: .Default) { (alert) -> Void in
+            self.presentRandomAlert()
+        }
+        let toRecipe = UIAlertAction(title: "View Recipe", style: .Default) { (action) -> Void in
+            self.performSegueWithIdentifier("toDetails", sender: recipe)
+        }
+        alert.addAction(tryAgain)
+        alert.addAction(toRecipe)
+        presentViewController(alert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         populateDataSource()
         self.tableViewOutlet.reloadData()
         self.navigationItem.title = "Possibilities"
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         populateDataSource()
         self.tableViewOutlet.reloadData()
+        randomButtonOutlet.layer.borderWidth = 1.75
+        randomButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+        randomButtonOutlet.layer.cornerRadius = 10.0
+        randomButtonOutlet.tintColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

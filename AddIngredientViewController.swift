@@ -55,6 +55,7 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
             cell.detailTextLabel?.text = "-"
         }
         cell.textLabel?.textColor = .whiteColor()
+        cell.detailTextLabel?.textColor = .whiteColor()
 
         return cell
     }
