@@ -33,9 +33,10 @@ class IngredientController {
     func removeIngredient(ingredient: Ingredient) {
         if let ingredientIndex = myPantry.indexOf(ingredient) {
             myPantry.removeAtIndex(ingredientIndex)
+            self.saveToPersistentStorage()
         }
         
-        self.saveToPersistentStorage()
+        
         
     }
     
