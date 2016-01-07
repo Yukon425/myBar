@@ -22,6 +22,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        populateDataSource()
         self.tableViewOutlet.reloadData()
     }
 
