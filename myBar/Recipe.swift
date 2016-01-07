@@ -9,6 +9,11 @@
 import Foundation
 
 class Recipe {
+    
+    private let nameKey = "name"
+    private let ingredientsKey = "ingredients"
+    private let volumeKey = "volume"
+    
     var name: String
     var ingredients: [(String, String)] = []
     var instructions: String
@@ -32,6 +37,7 @@ class Recipe {
         self.instructions = instructions
         
         var ingredientArray: [(String,String)] = []
+        
         for i in 1...15 {
             guard let ingredientName = dic["ingredient\(i)"] as? String,
                 let measurement = dic["measurement\(i)"] as? String else {return}
@@ -40,7 +46,12 @@ class Recipe {
                 ingredientArray.append((ingredientName, measurement))
             }
         }
-        self.ingredients = ingredientArray
         
+        self.ingredients = ingredientArray
+    }
+    
+    var dictionaryValue: [String: AnyObject] {
+        
+        return [nameKey: self.name, ingredientsKey: self.ingredients.map({[nameKey: $0.0, "volume": $0.1]})]
     }
 }
