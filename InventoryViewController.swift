@@ -19,18 +19,22 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        splitDataSource()
         print(IngredientController.sharedController.myPantry.map({$0.name}))
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        splitDataSource()
+
         self.alcoholicTableView.reloadData()
         self.nonAlcoholicTableView.reloadData()
     }
     
     func splitDataSource(){
+        alcoholicDataSource = []
+        nonAlcoholicDataSource = []
         for item in IngredientController.sharedController.myPantry{
             if item.alcoholic{
                 alcoholicDataSource.append(item)
