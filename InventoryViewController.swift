@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InventoryViewController: UIViewController, UITableViewDataSource {
+class InventoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var alcoholicTableView: UITableView!
     
@@ -73,6 +73,23 @@ class InventoryViewController: UIViewController, UITableViewDataSource {
             cell.textLabel?.text = ingredient.name
             
             return cell
+        }
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            if tableView == alcoholicTableView{
+                let ingredient = alcoholicDataSource[indexPath.row]
+                IngredientController.sharedController.removeIngredient(ingredient)
+                //alcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+
+            } else {
+                let ingredient = nonAlcoholicDataSource[indexPath.row]
+                IngredientController.sharedController.removeIngredient(ingredient)
+                //nonAlcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+
+            }
+            
         }
     }
 
