@@ -25,7 +25,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "myBar"
+        self.navigationItem.title = "My Bar"
         
         splitDataSource()
 
@@ -64,6 +64,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             let ingredient = alcoholicDataSource[indexPath.row]
             
             cell.textLabel?.text = ingredient.name
+            cell.textLabel?.textColor = .whiteColor()
             
             return cell
         } else {
@@ -72,6 +73,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             let ingredient = nonAlcoholicDataSource[indexPath.row]
             
             cell.textLabel?.text = ingredient.name
+            cell.textLabel?.textColor = .whiteColor()
             
             return cell
         }
@@ -79,10 +81,21 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView == alcoholicTableView {
+            tableView.headerViewForSection(0)?.layer.cornerRadius = 8
             return "Alcoholic"
         } else {
+            tableView.headerViewForSection(1)?.layer.cornerRadius = 8
             return "Non-Alcoholic"
         }
+    }
+    
+    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+        header.contentView.backgroundColor = .lightColor()
+        header.textLabel?.textColor = .whiteColor()
+        header.layer.borderWidth = 1.75
+        header.layer.cornerRadius = 5.0
+        header.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {

@@ -36,6 +36,7 @@ class RecipeDirectionsViewController: UIViewController {
         let ingredient = myRecipe!.ingredients[indexPath.row]
     
         cell.textLabel?.text = "\(ingredient.1)\(ingredient.0)"
+        cell.textLabel?.textColor = .whiteColor()
         
         //stuff
         

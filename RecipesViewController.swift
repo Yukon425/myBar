@@ -49,6 +49,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         let recipe = recipeDataSource[indexPath.row]
         
         cell.textLabel?.text = recipe.name
+        cell.textLabel?.textColor = .whiteColor()
         
         return cell
     }
