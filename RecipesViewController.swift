@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecipesViewController: UIViewController, UITableViewDataSource {
+class RecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var recipeDataSource = [Recipe]()
     
@@ -18,6 +18,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         populateDataSource()
         self.tableViewOutlet.reloadData()
+        self.navigationItem.title = "Possibilities"
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -34,7 +35,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
     func populateDataSource(){
         let inventory = IngredientController.sharedController.myPantry
         let recipes = JSONController.queryRecipes()
-        recipeDataSource = RecipeController.sharedInstance.fitlerRecipes(inventory, recipes: recipes)
+        recipeDataSource = RecipeController.sharedInstance.filterRecipes(inventory, recipes: recipes)
     }
     
 
@@ -50,6 +51,19 @@ class RecipesViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = recipe.name
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let recipe = recipeDataSource[indexPath.row]
+        self.performSegueWithIdentifier("toDetails", sender: recipe)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toDetails"{
+            let dVC = segue.destinationViewController as! RecipeDirectionsViewController
+            let recipe = sender as! Recipe
+            dVC.myRecipe = recipe
+        }
     }
 
 }

@@ -10,25 +10,32 @@ import UIKit
 
 class RecipeDirectionsViewController: UIViewController {
 
+    var myRecipe: Recipe?
+    
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        textView.text = myRecipe!.instructions
+        self.navigationItem.title = myRecipe!.name
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return myRecipe!.ingredients.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ingredients", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "2 pinches of salt"
+        let ingredient = myRecipe!.ingredients[indexPath.row]
+    
+        cell.textLabel?.text = "\(ingredient.1)\(ingredient.0)"
         
         //stuff
         

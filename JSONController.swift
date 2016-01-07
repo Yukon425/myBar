@@ -39,7 +39,6 @@ class JSONController {
             }
             
             return recipes
-            print("hi")
         } else {
             return []
         }

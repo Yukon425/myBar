@@ -12,7 +12,7 @@ class RecipeController {
     
     static let sharedInstance = RecipeController()
     
-    func fitlerRecipes(inventory: [Ingredient], recipes: [Recipe]) -> [Recipe] {
+    func filterRecipes(inventory: [Ingredient], recipes: [Recipe]) -> [Recipe] {
         var canMake = true
         var filteredRecipes = [Recipe]()
         var inventoryStrings = [String]()
@@ -23,7 +23,13 @@ class RecipeController {
 //        print(inventoryStrings)
         
         for recipe in recipes {
-            let recipeIngredients = recipe.ingredients.keys
+            var recipeIngredients = [String]()
+            
+            
+            for ingredient in recipe.ingredients{
+                recipeIngredients.append(ingredient.0)
+            }
+            
             let recipeIngredientsFiltered = recipeIngredients.filter() { !$0.isEmpty }
             canMake = true
             for recipeItem in recipeIngredientsFiltered {

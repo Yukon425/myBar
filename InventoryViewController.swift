@@ -25,6 +25,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationItem.title = "myBar"
         
         splitDataSource()
 
@@ -73,6 +74,14 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             cell.textLabel?.text = ingredient.name
             
             return cell
+        }
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if tableView == alcoholicTableView {
+            return "Alcoholic"
+        } else {
+            return "Non-Alcoholic"
         }
     }
     
