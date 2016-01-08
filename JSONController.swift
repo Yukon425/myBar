@@ -14,7 +14,7 @@ class JSONController {
         
         var recipes: [Recipe] = []
         
-        guard let path = NSBundle.mainBundle().pathForResource("drinkList", ofType: "json") else {return []}
+        guard let path = NSBundle.mainBundle().pathForResource("recipes", ofType: "json") else {return []}
         
         guard let json = NSData(contentsOfFile: path) else {return []}
         
@@ -27,14 +27,11 @@ class JSONController {
             return []
         }
         
-        if let dicObject = object as? [String:AnyObject]{
-            let allKeys = dicObject.keys
+        if let dicObject = object as? [[String:AnyObject]]{
             
-            for key in allKeys {
-                if let recipeDic = dicObject[key] as? [String:AnyObject]{
-                    if let recipeObject = Recipe(dic: recipeDic){
-                        recipes.append(recipeObject)
-                    }
+            for dictionary in dicObject {
+                if let recipeObject = Recipe(dic: dictionary){
+                    recipes.append(recipeObject)
                 }
             }
             

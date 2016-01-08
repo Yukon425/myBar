@@ -30,6 +30,7 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         self.allIngredients = JSONController.queryIngredients()
+        self.ingredientDataSource = self.allIngredients
         self.view.backgroundColor = UIColor(red:0.12, green:0.18, blue:0.2, alpha:1)
 
     }

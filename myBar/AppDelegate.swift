@@ -16,19 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
-        let recipeDictionaries = JSONController.queryRecipes().map({$0.dictionaryValue})
-        var recipeJSONData: NSData
-        do {
-            recipeJSONData = try NSJSONSerialization.dataWithJSONObject(recipeDictionaries, options: .PrettyPrinted)
-            
-            let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
-            let writePath = documents.stringByAppendingString("/recipes.json")
-            
-            recipeJSONData.writeToFile(writePath, atomically: true)
-        } catch {
-            print("fail")
-        }
+//        
+//        let recipeDictionaries = JSONController.queryRecipes().map({$0.dictionaryValue})
+//        var recipeJSONData: NSData
+//        do {
+//            recipeJSONData = try NSJSONSerialization.dataWithJSONObject(recipeDictionaries, options: .PrettyPrinted)
+//            
+//            let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+//            let writePath = documents.stringByAppendingString("/recipes.json")
+//            print(writePath)
+//            
+//            recipeJSONData.writeToFile(writePath, atomically: true)
+//        } catch {
+//            print("fail")
+//        }
         
         
         AppearanceController.setupAppearance()

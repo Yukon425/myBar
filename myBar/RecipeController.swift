@@ -27,7 +27,7 @@ class RecipeController {
             
             
             for ingredient in recipe.ingredients{
-                recipeIngredients.append(ingredient.0)
+                //recipeIngredients.append(ingredient.0)
             }
             
             let recipeIngredientsFiltered = recipeIngredients.filter() { !$0.isEmpty }
