@@ -33,9 +33,10 @@ class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, U
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ingredients", forIndexPath: indexPath)
         
-        let ingredient = myRecipe!.ingredients[indexPath.row]
+        let ingredientAmt = myRecipe!.ingredients[indexPath.row]["volume"]
+        let ingredientName = myRecipe!.ingredients[indexPath.row]["name"]
     
-        cell.textLabel?.text = "put ingredient stuff"
+        cell.textLabel?.text = "● " + ingredientAmt! + ingredientName!
         cell.textLabel?.textColor = .whiteColor()
         
         //stuff
