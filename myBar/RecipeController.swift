@@ -27,14 +27,13 @@ class RecipeController {
             
             
             for ingredient in recipe.ingredients{
-                //recipeIngredients.append(ingredient.0)
+                let ingredientName = ingredient["name"]! as String
+                recipeIngredients.append(ingredientName)
             }
             
-            let recipeIngredientsFiltered = recipeIngredients.filter() { !$0.isEmpty }
             canMake = true
-            for recipeItem in recipeIngredientsFiltered {
+            for recipeItem in recipeIngredients {
                 if !inventoryStrings.contains(recipeItem) {
-                    //print("can't make this recipe")
                     canMake = false
                 }
             }

@@ -1,0 +1,2269 @@
+{
+"drinks": [
+{
+"name": "Light rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Applejack",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Gin",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Dark rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sweet Vermouth",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Strawberry schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Scotch",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Apricot brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Triple sec",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Southern Comfort",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Orange bitters",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Lemon vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Blended whiskey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Dry Vermouth",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Amaretto",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Tea",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Grenadine",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Creme de Cacao",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Apple brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Dubonnet Blanc",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Apple schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Anejo rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Champagne",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Coffee liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cachaca",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sugar",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Blackberry brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Calvados",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Ice",
+"alcoholic": false,
+"category": "ice"
+},
+{
+"name": "Lemon",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Coffee brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Stout",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Irish whiskey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Tequila",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Bourbon",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Bitters",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Lime juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Egg",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Mint",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Sherry",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Peanut liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Cherry brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Canadian whisky",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Kahlua",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Yellow Chartreuse",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cognac",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Vanilla liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Sake",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Dubonnet Rouge",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Anis",
+"alcoholic": true,
+"category": "spice"
+},
+{
+"name": "Chocolate mint liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "White Creme de Menthe",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Gold tequila",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sweet and sour",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Salt",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Galliano",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Green Creme de Menthe",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Kummel",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Anisette",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Carbonated water",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lemon peel",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "White wine",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Sloe gin",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Melon liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Swedish Punsch",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Peach brandy",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Passion fruit juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Peppermint schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Creme de Noyaux",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pistachio liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Port",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Red wine",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Rock and rye",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cherry vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Rye whiskey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Grapefruit juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Ricard",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Banana liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Vanilla ice-cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Whiskey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Creme de Banane",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Lime juice cordial",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Strawberry liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Sambuca",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Peach schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Apple juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Berries",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Blueberries",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Orange juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Pineapple juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cranberries",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Brown sugar",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Milk",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Egg yolk",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Lemon juice",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Soda water",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Coconut liqueur",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Pineapple",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Sugar syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Rhubarb",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Ginger ale",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Worcestershire sauce",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Ginger",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Strawberries",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Chocolate syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Yoghurt",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Grape juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Orange",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Apple cider",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Banana",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Mango",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Soy milk",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lime",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Cantaloupe",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Grapes",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Kiwi",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Tomato juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cocoa powder",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Chocolate",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Heavy cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Peach Vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Ouzo",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Coffee",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Spiced rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Water",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Espresso",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Angelica root",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Condensed milk",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Honey",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Whipping cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Half-and-half",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Bread",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Plums",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Johnnie Walker",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Vanilla",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Apple",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Orange rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Everclear",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Kool-Aid",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lemonade",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cranberry juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Eggnog",
+"alcoholic": true,
+"category": "softDrink"
+},
+{
+"name": "Carbonated soft drink",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cloves",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Raisins",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Almond",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Pumpkin",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Beer",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pineau des Charentes",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Pink lemonade",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Raspberry juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Sherbet",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Peach nectar",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Lemon liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Firewater",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Absolut Citron",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Malibu rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Midori melon liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "151 proof rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Ice 101",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Bacardi Limon",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Bailey's irish cream",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Lager",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Orange vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Blue Curacao",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Absolut Vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Jagermeister",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Jack Daniels",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Seagram 7",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Drambuie",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Whisky",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "White rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pisco",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Irish cream",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Yukon Jack",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Ale",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Goldschlager",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Butterscotch schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Grand Marnier",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Aquavit",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Peachtree schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Absolut Kurant",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Chambord raspberry liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Tia maria",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Chocolate liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Taboo",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Frangelico",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Barenjager",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Hpnotiq",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Coca-Cola",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Tuaca",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cranberry vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Angostura bitters",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Tang",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Tropicana",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Grain alcohol",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "George Dickel",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cider",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Aftershock",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sprite",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Rumple Minze",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Key Largo schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pisang Ambon",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pernod",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "7-Up",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Limeade",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Gold rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Wild Turkey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cointreau",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Lime vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Razzmatazz",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Maraschino cherry juice",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Creme de Cassis",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Zima",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Crown Royal",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cardamom",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Orange Curacao",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Tabasco sauce",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Peach liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Curacao",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cherry Heering",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Fruit punch",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Fernet Branca",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Vermouth",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Cherry juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cinnamon schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Orange peel",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Advocaat",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Charleston Follies",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Clamato juice",
+"alcoholic": true,
+"category": "softDrink"
+},
+{
+"name": "Sour mix",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Apfelkorn",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Green Chartreuse",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Root beer schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Coconut rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Raspberry schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Black Sambuca",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Vanilla vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Root beer",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Absolut Peppar",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Parfait d'Amour",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Vanilla schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Orange liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Kiwi liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Hot chocolate",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Jello",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Mountain Dew",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Blueberry schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Maui",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Tennessee whiskey",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "White chocolate liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Cream of coconut",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Citrus vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Fruit juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Campari",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Corona",
+"alcoholic": true,
+"category": "beer"
+},
+{
+"name": "Chocolate ice-cream",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Jim Beam",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Hawaiian Punch",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Blackberry schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Chocolate milk",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Watermelon schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Beef bouillon",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Dr. Pepper",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Iced tea",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Daiquiri mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Hot Damn",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pear soft drink",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Club soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Benedictine",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Dark Creme de Cacao",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Mad Dog 20/20",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Black rum",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Cherry Cola",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Absinthe",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sparkling white wine",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Lemon gin",
+"alcoholic": true,
+"category": "produce"
+},
+{
+"name": "Tequila Rose",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Guinness stout",
+"alcoholic": true,
+"category": "beer"
+},
+{
+"name": "Orange soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Wildberry schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cappuccino",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Snapple",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lemon-lime soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Godiva liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Apple-cranberry juice",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Schweppes Russchian",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Piña Colada",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Melon vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Sour Apple Pucker",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Raspberry vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "coconut milk",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Ginger beer",
+"alcoholic": true,
+"category": "beer"
+},
+{
+"name": "Light cream",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Amer Picon",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Powdered sugar",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Wine",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Maraschino liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Molasses",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Kirschwasser",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Strega",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Caramel liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Passion fruit syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Tonic water",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Maraschino cherry",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Lillet",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Tawny port",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Orgeat syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Raspberry syrup",
+"alcoholic": false,
+"category": "mixer"
+
+},
+{
+"name": "White port",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Madeira",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Maple syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Forbidden Fruit",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Egg white",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Creme de Almond",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Carrot",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Blackberries",
+"alcoholic": false,
+"category": "produe"
+},
+{
+"name": "Butter",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Bitter lemon",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Mint syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Almond flavoring",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Allspice",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Papaya",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Fruit",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Cinnamon",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Coriander",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Wormwood",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Vanilla extract",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Corn syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Coconut syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Banana rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Ice-cream",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Coconut cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "White grape juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cherry liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Pineapple-orange-banana juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Raspberry cordial",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Lemon soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "St. Hallvard",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Thunderbird",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Celery salt",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Hoopers Hooch",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Erin Cream",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Rose's sweetened lime juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Wild Spirit liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Mandarine Napoleon",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Crystal light",
+"alcoholic": false,
+"category": "mix"
+},
+{
+"name": "Acerola",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Margarita mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Pear",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Pickled pepper",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Fanta",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Blackcurrant cordial",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Sarsaparilla",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cynar",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Purple passion",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Irish Mist",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pineapple vodka",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pina colada mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Surge",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Tropical fruit schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Peychaud bitters",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Candy",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Strawberry juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Raspberry jam",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Grape soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cranberry liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Nutmeg",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Cherries",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Saurer apfel",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cinzano Orancio",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Fresca",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Peach juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Passoa",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Mezcal",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Green Curacao",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Cola",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lime liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Collins mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Hazelnut liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Grape schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Bloody mary mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Watermelon liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Pepsi Cola",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Sunny delight",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Raspberry liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Grapefruit-lemon soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Soy sauce",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Guava juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Mello Yello",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Mango juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Safari",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Fruit cocktail",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Pear liqueur",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Gatorade",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Jalapeno",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Lemon-lime mix",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Whipped cream",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Olive",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Cherry",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Cocktail onion",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Papaya juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Cayenne pepper",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Clove",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Cumin seed",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Aperol",
+"alcoholic": true,
+"category": "mixer"
+},
+{
+"name": "Cornstarch",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Coffeemate",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Anise",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Apricot",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Yeast",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Guava syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Cucumber",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Fruit syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Blackcurrant squash",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Pear juice",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "West Coast Cooler",
+"alcoholic": true,
+"category": "wine"
+},
+{
+"name": "Nuts",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Chili sauce",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Strawberry syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Schweppes Lemon",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Food coloring",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Vanilla syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Apricot nectar",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Black pepper",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Almond syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Jose Cuervo",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Pepper sauce",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Olive juice",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Coconut",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Orange spiral",
+"alcoholic": false
+},
+{
+"name": "Peach",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Lime peel",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Rosewater",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Asafoetida",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Sirup of roses",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Fennel seeds",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Licorice root",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Peppermint extract",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Glycerine",
+"alcoholic": false,
+"category": "spice"
+},
+{
+"name": "Pineapple rum",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Squirt",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "Lingonberry jam",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Celery",
+"alcoholic": false,
+"category": "produce"
+},
+{
+"name": "Blackcurrant schnapps",
+"alcoholic": true,
+"category": "hardDrink"
+},
+{
+"name": "Banana syrup",
+"alcoholic": false,
+"category": "mixer"
+},
+{
+"name": "Cream soda",
+"alcoholic": false,
+"category": "softDrink"
+},
+{
+"name": "squeezed orange",
+"alcoholic": false,
+"category": "produce"
+}
+]
+}

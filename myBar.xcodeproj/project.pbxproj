@@ -22,6 +22,7 @@
 		54509D4F1C3C5A4800EFCBFC /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */; };
 		54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D501C3C5CB600EFCBFC /* Recipe.swift */; };
 		54509D5A1C3DB0D800EFCBFC /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54509D591C3DB0D800EFCBFC /* RecipeController.swift */; };
+		548046671C404187004589C8 /* catingredients.json in Resources */ = {isa = PBXBuildFile; fileRef = 548046661C404187004589C8 /* catingredients.json */; };
 		83977F811C3F0287006AC3B9 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83977F801C3F0287006AC3B9 /* AppearanceController.swift */; };
 		83A3EC411C3D814900D1E03E /* IngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EC401C3D814900D1E03E /* IngredientController.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		54509D4E1C3C5A4800EFCBFC /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		54509D501C3C5CB600EFCBFC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		54509D591C3DB0D800EFCBFC /* RecipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecipeController.swift; path = myBar/RecipeController.swift; sourceTree = "<group>"; };
+		548046661C404187004589C8 /* catingredients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catingredients.json; sourceTree = "<group>"; };
 		83977F801C3F0287006AC3B9 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		83A3EC401C3D814900D1E03E /* IngredientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				1F5A49831C3DBA6F00EAE099 /* ingredients.json */,
 				1FAF6EE91C40270400FE9002 /* recipes.json */,
 				1F99C5731C3D889E00C9FC44 /* drinkList.json */,
+				548046661C404187004589C8 /* catingredients.json */,
 			);
 			name = JSON;
 			path = myBar;
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5974FC1C3B3AFB00CD1D2F /* LaunchScreen.storyboard in Resources */,
+				548046671C404187004589C8 /* catingredients.json in Resources */,
 				1FAF6EEA1C40270400FE9002 /* recipes.json in Resources */,
 				1F5974F91C3B3AFB00CD1D2F /* Assets.xcassets in Resources */,
 				1F99C5741C3D889E00C9FC44 /* drinkList.json in Resources */,
