@@ -12,41 +12,50 @@ class Ingredient: Equatable {
     
     private let alcoholicKey = "alcoholic"
     private let nameKey = "name"
+    private let categoryKey = "category"
     
-    var alcoholic: Bool = false
+    var alcoholic: Bool
     var name: String
+    var category: String
     
-    init(alcoholic: Bool, name: String) {
+    init(alcoholic: Bool, name: String, category: String) {
         self.alcoholic = alcoholic
         self.name = name
+        self.category = category
     }
     
     init?(dictionary: [String:AnyObject]) {
         
-        guard let name = dictionary["name"] as? String else {
+        guard let name = dictionary[nameKey] as? String,
+                let category = dictionary[categoryKey] as? String,
+        let alcoholic = dictionary[alcoholicKey] as? Bool else {
                 self.alcoholic = false
                 self.name = ""
+                self.category = ""
                 return nil
         }
         
-        if let alcoholic = dictionary["alcoholic"] as? Bool {
-            self.alcoholic = alcoholic
-        } else if let alcoholic = dictionary["alcoholic"] as? String {
-           
-            if alcoholic == "alcoholic" {
-                self.alcoholic = true
-            } else {
-                self.alcoholic = false
-            }
-        }
+//        if let alcoholic = dictionary["alcoholic"] as? Bool {
+//            self.alcoholic = alcoholic
+//        } else if let alcoholic = dictionary["alcoholic"] as? String {
+//           
+//            if alcoholic == "alcoholic" {
+//                self.alcoholic = true
+//            } else {
+//                self.alcoholic = false
+//            }
+//        }
         self.name = name
+        self.alcoholic = alcoholic
+        self.category = category
     }
     
     func dictionaryCopy() -> [String: AnyObject] {
         
         let dictionary = [
             alcoholicKey : self.alcoholic,
-            nameKey : self.name
+            nameKey : self.name,
+            categoryKey: self.category
         ]
         
         return dictionary as! [String : AnyObject]

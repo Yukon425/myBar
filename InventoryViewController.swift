@@ -62,20 +62,24 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if tableView == alcoholicTableView {
-            let cell = tableView.dequeueReusableCellWithIdentifier("alcoholic", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("alcoholic", forIndexPath: indexPath) as! IngredientTableViewCell
             let ingredient = alcoholicDataSource[indexPath.row]
             
-            cell.textLabel?.text = ingredient.name
-            cell.textLabel?.textColor = .whiteColor()
+            cell.setCell(ingredient)
+            
+//            cell.textLabel?.text = ingredient.name
+//            cell.textLabel?.textColor = .whiteColor()
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath)
+            let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath) as! IngredientTableViewCell
             
             let ingredient = nonAlcoholicDataSource[indexPath.row]
             
-            cell.textLabel?.text = ingredient.name
-            cell.textLabel?.textColor = .whiteColor()
+            cell.setCell(ingredient)
+            
+//            cell.textLabel?.text = ingredient.name
+//            cell.textLabel?.textColor = .whiteColor()
             
             return cell
         }

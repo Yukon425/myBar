@@ -42,6 +42,7 @@ class JSONController {
     }
     
     static func queryIngredients()->[Ingredient]{
+        
         var ingredients: [Ingredient] = []
         
         guard let path = NSBundle.mainBundle().pathForResource("catingredients", ofType: "json") else {return []}
@@ -63,8 +64,10 @@ class JSONController {
             
             
             for ingredient in dicArray {
-                guard let ingredientObject = Ingredient(dictionary: ingredient) else {return []}
-                ingredients.append(ingredientObject)
+//                guard let ingredientObject = Ingredient(dictionary: ingredient) else {return []}
+                if let ingredientObject = Ingredient(dictionary: ingredient){
+                    ingredients.append(ingredientObject)
+                }
             }
             return ingredients
         }
@@ -72,23 +75,5 @@ class JSONController {
     }
         
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
