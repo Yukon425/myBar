@@ -19,10 +19,13 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(IngredientController.sharedController.myPantry.map({$0.name}))
-        // Do any additional setup after loading the view.
-        print(JSONController.queryRecipes()[34].instructions)
-        print(JSONController.queryRecipes()[34].ingredients)
+//        IngredientController.sharedController.myPantry = []
+       IngredientController.sharedController.loadFromPersistentStorage()
+
+//        print(IngredientController.sharedController.myPantry.map({$0.name}))
+//        Do any additional setup after loading the view.
+//        print(JSONController.queryRecipes()[34].instructions)
+//        print(JSONController.queryRecipes()[34].ingredients)
     }
     
     override func viewWillAppear(animated: Bool) {

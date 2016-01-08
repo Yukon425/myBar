@@ -46,25 +46,26 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ingredient", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("ingredientCell", forIndexPath: indexPath) as! AddIngredientTableViewCell
         
-        cell.textLabel?.text = ingredientDataSource[indexPath.row].name
+        cell.nameLabel?.text = ingredientDataSource[indexPath.row].name
         
         if IngredientController.sharedController.myPantry.contains(ingredientDataSource[indexPath.row]) {
-            cell.detailTextLabel?.text = "√"
+            cell.checkLabel?.text = "✓"
         } else {
-            cell.detailTextLabel?.text = "-"
+            cell.checkLabel?.text = "❐"
         }
-        cell.textLabel?.textColor = .whiteColor()
-        cell.detailTextLabel?.textColor = .whiteColor()
+        cell.nameLabel?.textColor = .whiteColor()
+        cell.checkLabel?.textColor = .whiteColor()
 
+        cell.setCell(ingredientDataSource[indexPath.row])
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
        
-        let cell = tableView.dequeueReusableCellWithIdentifier("ingredient", forIndexPath: indexPath)
-        cell.detailTextLabel?.text = "√"
+        let cell = tableView.dequeueReusableCellWithIdentifier("ingredientCell", forIndexPath: indexPath) as! AddIngredientTableViewCell
+        cell.checkLabel?.text = "✓"
         let ingredient = ingredientDataSource[indexPath.row]
         
         IngredientController.sharedController.addIngredient(ingredient)

@@ -17,10 +17,10 @@ class IngredientController {
     var myPantry: [Ingredient] = []
     
     
-    init() {
-        self.myPantry = []
-        self.loadFromPersistentStorage()
-    }
+//    init() {
+//        self.myPantry = []
+//        self.loadFromPersistentStorage()
+//    }
     
     func addIngredient(ingredient: Ingredient) {
         if !(myPantry.contains(ingredient)){
