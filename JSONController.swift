@@ -44,7 +44,7 @@ class JSONController {
     static func queryIngredients()->[Ingredient]{
         var ingredients: [Ingredient] = []
         
-        guard let path = NSBundle.mainBundle().pathForResource("ingredients", ofType: "json") else {return []}
+        guard let path = NSBundle.mainBundle().pathForResource("catingredients", ofType: "json") else {return []}
         
         guard let json = NSData(contentsOfFile: path) else {return []}
         

@@ -183,10 +183,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note" translatesAutoresizingMaskIntoConstraints="NO" id="2Rz-gE-d2h">
-                                <rect key="frame" x="40" y="279" width="520" height="252"/>
+                                <rect key="frame" x="40" y="297.5" width="520" height="233.5"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-LX-YQZ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="215"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="233.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.49411764705882355" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="15" reuseIdentifier="ingredients" id="NHj-Y0-Deb">
@@ -206,7 +206,7 @@
                                 </connections>
                             </tableView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0H5-U4-c6I">
-                                <rect key="frame" x="68" y="279" width="487" height="252"/>
+                                <rect key="frame" x="68" y="297" width="487" height="233.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,13 +228,15 @@
                             <constraint firstItem="2ZL-hq-VkR" firstAttribute="top" secondItem="OXS-LX-YQZ" secondAttribute="bottom" constant="272" id="jIw-3v-6zc"/>
                             <constraint firstItem="2Rz-gE-d2h" firstAttribute="top" secondItem="0H5-U4-c6I" secondAttribute="top" id="oVs-ig-TrU"/>
                             <constraint firstItem="0H5-U4-c6I" firstAttribute="leading" secondItem="vVe-rc-80g" secondAttribute="leadingMargin" constant="48" id="t4L-Po-g5y"/>
+                            <constraint firstItem="OXS-LX-YQZ" firstAttribute="height" secondItem="0H5-U4-c6I" secondAttribute="height" id="tCm-WP-eBO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0H5-U4-c6I" secondAttribute="trailing" constant="25" id="xPw-s7-n66"/>
                             <constraint firstItem="2Rz-gE-d2h" firstAttribute="top" secondItem="0H5-U4-c6I" secondAttribute="top" id="z1A-ta-uQ1"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="fni-5u-IYw"/>
                                 <exclude reference="oVs-ig-TrU"/>
+                                <exclude reference="fni-5u-IYw"/>
+                                <exclude reference="jIw-3v-6zc"/>
                             </mask>
                         </variation>
                     </view>
