@@ -33,18 +33,36 @@ class AddIngredientTableViewCell: UITableViewCell {
         switch ingredient.category {
         case "mixer":
             self.iconImage.image = UIImage(named: "mixer")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         case "hardDrink":
             self.iconImage.image = UIImage(named: "hardDrink")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         case "softDrink":
             self.iconImage.image = UIImage(named: "softDrink")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         case "produce":
             self.iconImage.image = UIImage(named: "produce")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         case "beer":
             self.iconImage.image = UIImage(named: "beer")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         case "spice":
             self.iconImage.image = UIImage(named: "spice")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
+        case "ice":
+            self.iconImage.image = UIImage(named: "ice")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         default:
             self.iconImage.image = UIImage(named: "mixer")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         }
     }
 }

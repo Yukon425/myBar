@@ -49,10 +49,10 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewWillAppear(animated)
         populateDataSource()
         self.tableViewOutlet.reloadData()
-        randomButtonOutlet.layer.borderWidth = 1.75
-        randomButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
-        randomButtonOutlet.layer.cornerRadius = 10.0
-        randomButtonOutlet.tintColor = UIColor.whiteColor()
+//        randomButtonOutlet.layer.borderWidth = 1.75
+//        randomButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+//        randomButtonOutlet.layer.cornerRadius = 10.0
+//        randomButtonOutlet.tintColor = UIColor.whiteColor()
     }
 
     override func didReceiveMemoryWarning() {

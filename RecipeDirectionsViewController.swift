@@ -36,7 +36,7 @@ class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, U
         let ingredientAmt = myRecipe!.ingredients[indexPath.row]["volume"]
         let ingredientName = myRecipe!.ingredients[indexPath.row]["name"]
     
-        cell.textLabel?.text = "● " + ingredientAmt! + ingredientName!
+        cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
         cell.textLabel?.textColor = .whiteColor()
         
         //stuff
