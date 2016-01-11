@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class SettingsController {
     
@@ -22,9 +23,32 @@ class SettingsController {
             // first launch
             NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
             NSUserDefaults.standardUserDefaults().synchronize()
-            let salt = Ingredient(alcoholic: false, name: "Salt", category: "spice")
-            IngredientController.sharedController.addIngredient(salt)
+//            let salt = Ingredient(alcoholic: false, name: "Salt", category: "spice")
+//            IngredientController.sharedController.addIngredient(salt)
             
+            
+            let arrayOfIngredients = [Ingredient(alcoholic: false, name: "Salt", category: "spice"), Ingredient(alcoholic: false, name: "Black pepper", category: "spice"), Ingredient(alcoholic: false, name: "Ice", category: "ice"), Ingredient(alcoholic: false, name: "Sugar", category: "spice"), Ingredient(alcoholic: false, name: "Water", category: "softDrink")]
+            IngredientController.sharedController.addPrepopulatedIngredients(arrayOfIngredients)
+  
+        }
+        
+   
+    }
+    
+    static func checkEmptyPantry() -> UIViewController? {
+        if !NSUserDefaults.standardUserDefaults().boolForKey("DisplayedAddIngredients") {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "DisplayedAddIngredients")
+            let pantryAlertController = UIAlertController(title: "Pantry Requires More Ingredients", message: "Tap '+' to add more ingredients.", preferredStyle: .Alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
+                print(action)
+            }
+            
+            pantryAlertController.addAction(continueAction)
+            
+            return pantryAlertController
+        } else {
+            print("More ingredients required")
+            return nil
         }
     }
     

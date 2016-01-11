@@ -30,6 +30,12 @@ class IngredientController {
         
     }
     
+    func addPrepopulatedIngredients(ingredients: [Ingredient]) {
+        for ingredient in ingredients {
+            addIngredient(ingredient)
+        }
+    }
+    
     func removeIngredient(ingredient: Ingredient) {
         if let ingredientIndex = myPantry.indexOf(ingredient) {
             myPantry.removeAtIndex(ingredientIndex)
