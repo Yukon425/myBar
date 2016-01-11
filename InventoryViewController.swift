@@ -36,6 +36,25 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
 
         self.alcoholicTableView.reloadData()
         self.nonAlcoholicTableView.reloadData()
+        checkEmptyPantry()
+    }
+    
+    
+    func checkEmptyPantry() {
+        if alcoholicDataSource.count + nonAlcoholicDataSource.count == 0 {
+//            print("There are no items in the pantry")
+            let pantryAlertController = UIAlertController(title: "Pantry is Empty", message: "Click on '+' to add ingredients." , preferredStyle: .Alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
+                print(action)
+            }
+            
+            pantryAlertController.addAction(continueAction)
+            
+            presentViewController(pantryAlertController, animated: true, completion: nil)
+            
+        } else {
+            print("There are items in the pantry")
+        }
     }
     
     func splitDataSource(){
