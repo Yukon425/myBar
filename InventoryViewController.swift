@@ -20,19 +20,8 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 //        IngredientController.sharedController.myPantry = []
-        if(NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
-        {
-            IngredientController.sharedController.loadFromPersistentStorage()
-        }
-        else
-        {
-            // first launch
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            let salt = Ingredient(alcoholic: false, name: "Salt", category: "spice")
-            IngredientController.sharedController.addIngredient(salt)
-            
-        }
+        SettingsController.sharedInstance.firstLaunch()
+        
        
 
 //        print(IngredientController.sharedController.myPantry.map({$0.name}))
