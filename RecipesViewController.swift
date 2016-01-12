@@ -40,6 +40,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         
         self.navigationItem.title = "Possibilities"
+        self.canBecomeFirstResponder()
     }
     
     override func viewWillAppear(animated: Bool) {
