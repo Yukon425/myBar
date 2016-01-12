@@ -12,6 +12,12 @@ class RecipeController {
     
     static let sharedInstance = RecipeController()
     
+    var possibleRecipes: [Recipe] = []
+    
+    func populatePossibleRecipes(){
+        self.possibleRecipes = filterRecipes(IngredientController.sharedController.myPantry, recipes: JSONController.queryRecipes())
+    }
+    
     func filterRecipes(inventory: [Ingredient], recipes: [Recipe]) -> [Recipe] {
         var canMake = true
         var filteredRecipes = [Recipe]()
@@ -20,7 +26,6 @@ class RecipeController {
             let nameString = ingredient.name
             inventoryStrings.append(nameString)
         }
-//        print(inventoryStrings)
         
         for recipe in recipes {
             var recipeIngredients = [String]()
