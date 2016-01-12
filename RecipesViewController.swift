@@ -26,13 +26,13 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         let recipe = recipeDataSource[Int(number)]
         
         let alert = UIAlertController(title: "Cocktail", message: recipe.name, preferredStyle: .Alert)
-        let tryAgain = UIAlertAction(title: "Retry", style: .Default) { (alert) -> Void in
-            self.presentRandomAlert()
+        let toDismiss = UIAlertAction(title: "Dismiss", style: .Cancel) { (alert) -> Void in
+            print(alert)
         }
         let toRecipe = UIAlertAction(title: "View Recipe", style: .Default) { (action) -> Void in
             self.performSegueWithIdentifier("toDetails", sender: recipe)
         }
-        alert.addAction(tryAgain)
+        alert.addAction(toDismiss)
         alert.addAction(toRecipe)
         presentViewController(alert, animated: true, completion: nil)
     }
@@ -41,6 +41,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         populateDataSource()
         self.tableViewOutlet.reloadData()
         self.navigationItem.title = "Possibilities"
+        self.becomeFirstResponder()
         
         
     }
@@ -94,5 +95,23 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
             dVC.myRecipe = recipe
         }
     }
-
+    
+    //MARK: - Implementing Shake functionality
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        
+        if(event!.subtype == UIEventSubtype.MotionShake) {
+            
+            if recipeDataSource.count > 0 {
+                presentRandomAlert()
+            }
+        }
+        
+        
+    }
+    
 }
