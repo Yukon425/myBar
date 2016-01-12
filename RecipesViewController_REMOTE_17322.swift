@@ -38,9 +38,12 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateDataSource()
+        self.tableViewOutlet.reloadData()
+        self.navigationItem.title = "Possibilities"
+        self.becomeFirstResponder()
         
         self.navigationItem.title = "Possibilities"
-        self.canBecomeFirstResponder()
     }
     
     override func viewWillAppear(animated: Bool) {

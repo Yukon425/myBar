@@ -38,28 +38,33 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        populateDataSource()
+        self.tableViewOutlet.reloadData()
         self.navigationItem.title = "Possibilities"
-        self.canBecomeFirstResponder()
+        self.becomeFirstResponder()
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        let myGroup = dispatch_group_create()
-        dispatch_group_enter(myGroup)
         populateDataSource()
-        dispatch_group_leave(myGroup)
-        
-        dispatch_group_notify(myGroup, dispatch_get_main_queue()) { () -> Void in
-            self.tableViewOutlet.reloadData()
-        }
+        self.tableViewOutlet.reloadData()
+//        randomButtonOutlet.layer.borderWidth = 1.75
+//        randomButtonOutlet.layer.borderColor = UIColor.whiteColor().CGColor
+//        randomButtonOutlet.layer.cornerRadius = 10.0
+//        randomButtonOutlet.tintColor = UIColor.whiteColor()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     func populateDataSource(){
-//        let inventory = IngredientController.sharedController.myPantry
-//        let recipes = JSONController.queryRecipes()
-        recipeDataSource = RecipeController.sharedInstance.possibleRecipes
+        let inventory = IngredientController.sharedController.myPantry
+        let recipes = JSONController.queryRecipes()
+        recipeDataSource = RecipeController.sharedInstance.filterRecipes(inventory, recipes: recipes)
     }
     
 

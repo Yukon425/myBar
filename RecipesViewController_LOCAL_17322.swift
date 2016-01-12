@@ -38,9 +38,16 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< 3c6c4ec277854dba02aa473392b3e545487fb64f
+=======
+        populateDataSource()
+        self.tableViewOutlet.reloadData()
+        self.navigationItem.title = "Possibilities"
+        self.becomeFirstResponder()
+        
+>>>>>>> Added shake to randomize, changed "retry" to "dismiss"
         
         self.navigationItem.title = "Possibilities"
-        self.canBecomeFirstResponder()
     }
     
     override func viewWillAppear(animated: Bool) {
