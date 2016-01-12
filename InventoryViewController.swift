@@ -20,7 +20,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 //        IngredientController.sharedController.myPantry = []
-        SettingsController.sharedInstance.firstLaunch()
+        SettingsController.firstLaunch()
 
 //        print(IngredientController.sharedController.myPantry.map({$0.name}))
 //        Do any additional setup after loading the view.

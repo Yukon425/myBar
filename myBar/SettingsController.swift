@@ -11,9 +11,9 @@ import UIKit
 
 class SettingsController {
     
-    static let sharedInstance = SettingsController()
+//    static let sharedInstance = SettingsController()
  
-    func firstLaunch() {
+    static func firstLaunch() {
         if(NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
         {
             IngredientController.sharedController.loadFromPersistentStorage()
