@@ -130,16 +130,21 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
         if tableView == alcoholicTableView && editingStyle == .Delete {
-            let ingredient = alcoholicDataSource[indexPath.row]
-            IngredientController.sharedController.removeIngredient(ingredient)
-            splitDataSource()
-            alcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else  if tableView == nonAlcoholicTableView && editingStyle == .Delete {
-            let ingredient = nonAlcoholicDataSource[indexPath.row]
-            IngredientController.sharedController.removeIngredient(ingredient)
-            splitDataSource()
-            nonAlcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+                let ingredient = self.alcoholicDataSource[indexPath.row]
+                IngredientController.sharedController.removeIngredient(ingredient)
+                self.splitDataSource()
+                self.alcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+         } else  if tableView == nonAlcoholicTableView && editingStyle == .Delete {
+            
+                let ingredient = self.nonAlcoholicDataSource[indexPath.row]
+                IngredientController.sharedController.removeIngredient(ingredient)
+                self.splitDataSource()
+                self.nonAlcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
             
         }
         

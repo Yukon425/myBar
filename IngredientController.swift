@@ -16,7 +16,11 @@ class IngredientController {
     
     var myPantry: [Ingredient] = [] {
         didSet{
-            RecipeController.sharedInstance.populatePossibleRecipes()
+            let backgroundQueue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
+
+            dispatch_async(backgroundQueue, { () -> Void in
+                RecipeController.sharedInstance.populatePossibleRecipes()
+            })
         }
     }
     
