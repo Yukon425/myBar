@@ -123,8 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				83977F801C3F0287006AC3B9 /* AppearanceController.swift */,
-				54509D591C3DB0D800EFCBFC /* RecipeController.swift */,
 				1F5A497C1C3D955600EAE099 /* JSONController.swift */,
+				54509D591C3DB0D800EFCBFC /* RecipeController.swift */,
 				83A3EC401C3D814900D1E03E /* IngredientController.swift */,
 				54FBC5EA1C4431F300411F4C /* SettingsController.swift */,
 			);

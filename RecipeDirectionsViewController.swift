@@ -38,9 +38,7 @@ class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, U
     
         cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
         cell.textLabel?.textColor = .whiteColor()
-        
-        //stuff
-        
+                
         return cell
     }
     
