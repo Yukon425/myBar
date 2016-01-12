@@ -52,4 +52,22 @@ class SettingsController {
         }
     }
     
+    static func randomizeAlert() -> UIViewController? {
+        if !NSUserDefaults.standardUserDefaults().boolForKey("DisplayedRecipes") {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "DisplayedRecipes")
+            let randomizedAlertController = UIAlertController(title: "Generate Random Recipe", message: "Shake phone or tap the dice to generate a randomized recipe.", preferredStyle: .Alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
+                print(action)
+            }
+            
+            randomizedAlertController.addAction(continueAction)
+            
+            return randomizedAlertController
+        } else {
+            print("Recipes not randomized")
+            return nil
+        }
+    }
+
+    
 }

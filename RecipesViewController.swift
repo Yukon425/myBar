@@ -25,7 +25,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         let number = arc4random_uniform(UInt32(recipeDataSource.count))
         let recipe = recipeDataSource[Int(number)]
         
-        let alert = UIAlertController(title: "Cocktail", message: "\(recipe.name)\n (You can also shake to randomize recipes)", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "\(recipe.name)", message: "", preferredStyle: .Alert)
         let toDismiss = UIAlertAction(title: "Dismiss", style: .Cancel) { (alert) -> Void in
             print(alert)
         }
@@ -53,6 +53,10 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         dispatch_group_notify(myGroup, dispatch_get_main_queue()) { () -> Void in
             self.tableViewOutlet.reloadData()
+            
+        if let randomizedAlertVC = SettingsController.randomizeAlert() {
+            self.presentViewController(randomizedAlertVC, animated: true, completion: nil)
+            }
         }
     }
     
