@@ -38,13 +38,11 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< f002ca7e5e91525aeb6711b978b1e9eb813911f9
-=======
+
         populateDataSource()
         self.tableViewOutlet.reloadData()
         self.navigationItem.title = "Possibilities"
         self.becomeFirstResponder()
->>>>>>> added reload on background thread
         
         self.navigationItem.title = "Possibilities"
     }
