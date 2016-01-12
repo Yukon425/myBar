@@ -25,7 +25,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         let number = arc4random_uniform(UInt32(recipeDataSource.count))
         let recipe = recipeDataSource[Int(number)]
         
-        let alert = UIAlertController(title: "Cocktail", message: "\(recipe.name)\n (You can also shake to randomize recipes)", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Cocktail", message: recipe.name, preferredStyle: .Alert)
         let toDismiss = UIAlertAction(title: "Dismiss", style: .Cancel) { (alert) -> Void in
             print(alert)
         }
@@ -38,9 +38,19 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+<<<<<<< 3c6c4ec277854dba02aa473392b3e545487fb64f
+=======
+        populateDataSource()
+        self.tableViewOutlet.reloadData()
         self.navigationItem.title = "Possibilities"
-        self.canBecomeFirstResponder()
+        self.becomeFirstResponder()
+        
+<<<<<<< 9f015cabd6e29b4bd5144d8791292c9db132564c
+>>>>>>> Added shake to randomize, changed "retry" to "dismiss"
+        
+=======
+>>>>>>> added reload on background thread
+        self.navigationItem.title = "Possibilities"
     }
     
     override func viewWillAppear(animated: Bool) {

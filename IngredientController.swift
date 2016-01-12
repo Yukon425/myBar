@@ -14,7 +14,11 @@ class IngredientController {
     
     static let sharedController = IngredientController()
     
-    var myPantry: [Ingredient] = []
+    var myPantry: [Ingredient] = [] {
+        didSet{
+            RecipeController.sharedInstance.populatePossibleRecipes()
+        }
+    }
     
     
 //    init() {
