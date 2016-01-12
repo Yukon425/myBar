@@ -65,15 +65,20 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-       
         let cell = tableView.dequeueReusableCellWithIdentifier("ingredientCell", forIndexPath: indexPath) as! AddIngredientTableViewCell
-        cell.checkLabel?.text = "✓"
-        let ingredient = ingredientDataSource[indexPath.row]
-        
-        IngredientController.sharedController.addIngredient(ingredient)
-        
-        tableViewOutlet.reloadData()
-        
+        if IngredientController.sharedController.myPantry.contains(ingredientDataSource[indexPath.row]){
+            cell.checkLabel?.text = "❐"
+            let ingredient = ingredientDataSource[indexPath.row]
+            IngredientController.sharedController.removeIngredient(ingredient)
+            tableViewOutlet.reloadData()
+        } else {
+            cell.checkLabel?.text = "✓"
+            let ingredient = ingredientDataSource[indexPath.row]
+            
+            IngredientController.sharedController.addIngredient(ingredient)
+            
+            tableViewOutlet.reloadData()
+        }
     }
     
     // MARK: - Searchbar Delegate
