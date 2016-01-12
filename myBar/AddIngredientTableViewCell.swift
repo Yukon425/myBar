@@ -59,6 +59,10 @@ class AddIngredientTableViewCell: UITableViewCell {
             self.iconImage.image = UIImage(named: "ice")
             self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
             self.iconImage.tintColor = .whiteColor()
+        case "wine":
+            self.iconImage.image = UIImage(named: "wine")
+            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            self.iconImage.tintColor = .whiteColor()
         default:
             self.iconImage.image = UIImage(named: "mixer")
             self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
