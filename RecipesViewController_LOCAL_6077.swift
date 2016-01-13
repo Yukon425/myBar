@@ -83,19 +83,9 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
         cell.textLabel?.textColor = .whiteColor()
-<<<<<<< HEAD
 
         
         
-=======
-        if recipe.totalIngredients > recipe.userIngredients {
-            cell.detailTextLabel?.text = "(\(recipe.userIngredients!)/\(recipe.totalIngredients!))"
-            cell.detailTextLabel?.textColor = .whiteColor()
-        } else {
-            cell.detailTextLabel?.text = "✓"
-            cell.detailTextLabel?.textColor = .whiteColor()
-        }
->>>>>>> develop
         
         return cell
     }

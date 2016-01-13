@@ -36,15 +36,28 @@ class RecipeController {
                 recipeIngredients.append(ingredientName)
             }
             
+            let ingredientCount = recipeIngredients.count
+            var containCount = 0
             canMake = true
             for recipeItem in recipeIngredients {
-                if !inventoryStrings.contains(recipeItem) {
-                    canMake = false
+                if inventoryStrings.contains(recipeItem) {
+                    containCount++
                 }
             }
+            
+            if ingredientCount > containCount + 1 {
+                canMake = false
+            }
+            if ingredientCount == containCount + 1 && ingredientCount <= 2 {
+                canMake = false
+            }
+            
             if canMake == true {
                 filteredRecipes.append(recipe)
                 print(recipe.name)
+                recipe.totalIngredients = ingredientCount
+                recipe.userIngredients = containCount
+                
             }
         }
         return filteredRecipes

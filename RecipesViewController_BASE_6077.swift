@@ -76,26 +76,8 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let recipe = recipeDataSource[indexPath.row]
         
-        if self.recipeDataSource.count == 0 {
-            cell.textLabel?.text = "Please add ingredients to your inventory"
-        }else{
-            cell.textLabel?.text = recipe.name
-        }
-        
+        cell.textLabel?.text = recipe.name
         cell.textLabel?.textColor = .whiteColor()
-<<<<<<< HEAD
-
-        
-        
-=======
-        if recipe.totalIngredients > recipe.userIngredients {
-            cell.detailTextLabel?.text = "(\(recipe.userIngredients!)/\(recipe.totalIngredients!))"
-            cell.detailTextLabel?.textColor = .whiteColor()
-        } else {
-            cell.detailTextLabel?.text = "✓"
-            cell.detailTextLabel?.textColor = .whiteColor()
-        }
->>>>>>> develop
         
         return cell
     }
