@@ -87,5 +87,13 @@ class AddIngredientViewController: UIViewController, UITableViewDataSource, UITa
         ingredientDataSource = allIngredients.filter({$0.name.uppercaseString.containsString(searchText.uppercaseString)})
         self.tableViewOutlet.reloadData()
     }
+ 
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        searchBarOutlet.resignFirstResponder()
+    }
 
 }
