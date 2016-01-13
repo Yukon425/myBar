@@ -16,6 +16,8 @@ class IngredientController {
     
     var myPantry: [Ingredient] = [] {
         didSet{
+            
+            //The following code takes 2-3 seconds, we put it on a background thread to prevent "deleting" from slowing down the UI
             let backgroundQueue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
 
             dispatch_async(backgroundQueue, { () -> Void in
@@ -24,11 +26,7 @@ class IngredientController {
         }
     }
     
-    
-//    init() {
-//        self.myPantry = []
-//        self.loadFromPersistentStorage()
-//    }
+
     
     func addIngredient(ingredient: Ingredient) {
         if !(myPantry.contains(ingredient)){
