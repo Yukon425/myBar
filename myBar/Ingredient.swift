@@ -18,6 +18,12 @@ class Ingredient: Equatable {
     var name: String
     var category: String
     
+    init(name: String) {
+        self.alcoholic = true
+        self.name = name
+        self.category = ""
+    }
+    
     init(alcoholic: Bool, name: String, category: String) {
         self.alcoholic = alcoholic
         self.name = name

@@ -33,12 +33,24 @@ class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, U
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ingredients", forIndexPath: indexPath)
         
-        let ingredientAmt = myRecipe!.ingredients[indexPath.row]["volume"]
-        let ingredientName = myRecipe!.ingredients[indexPath.row]["name"]
-    
-        cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
-        cell.textLabel?.textColor = .whiteColor()
-                
+        let ingredient = myRecipe!.ingredients[indexPath.row]
+        
+        let ingredientAmt = ingredient["volume"]
+        let ingredientName = ingredient["name"]
+        
+        let ingredientObj = Ingredient(name: ingredientName!)
+        
+        if IngredientController.sharedController.myPantry.contains(ingredientObj){
+            cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
+            cell.textLabel?.textColor = .whiteColor()
+
+        } else {
+            cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
+            cell.textLabel?.textColor = .myLightGray()
+
+        }
+        
+        
         return cell
     }
     

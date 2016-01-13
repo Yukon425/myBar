@@ -21,6 +21,10 @@ extension UIColor {
     class func lightestColor() -> UIColor {
         return UIColor(red:0.2, green:0.49, blue:0.64, alpha:1)
     }
+    
+    class func myLightGray() -> UIColor {
+        return UIColor(red:0.75, green:0.75, blue:0.75, alpha:1)
+    }
 }
 
 class AppearanceController{
