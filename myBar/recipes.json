@@ -11874,16 +11874,6 @@
     "name" : "Banana Punch #2"
   },
   {
-    "instructions" : "Pour into a glass and enjoy.",
-    "ingredients" : [
-      {
-        "volume" : "",
-        "name" : "Water"
-      }
-    ],
-    "name" : "Water"
-  },
-  {
     "instructions" : "Shake all ingredients together and serve",
     "ingredients" : [
       {
