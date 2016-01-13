@@ -18,6 +18,8 @@ class Recipe {
     var name: String = ""
     var ingredients: [[String:String]] = []
     var instructions: String = ""
+    var totalIngredients: Int?
+    var userIngredients: Int?
     
 //    init(name: String, ingredients: [(String, String)], instructions: String) {
 //        self.name = name
