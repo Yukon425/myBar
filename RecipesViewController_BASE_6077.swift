@@ -10,7 +10,7 @@ import UIKit
 
 class RecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var recipeDataSource: [Recipe] = []
+    var recipeDataSource = [Recipe]()
     
     @IBOutlet weak var tableViewOutlet: UITableView!
     @IBOutlet weak var randomButtonOutlet: UIButton!
@@ -68,36 +68,16 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if recipeDataSource.count == 0 {
-            return 1
-        } else {
-            return recipeDataSource.count
-        }
+        return recipeDataSource.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("recipe", forIndexPath: indexPath)
         
+        let recipe = recipeDataSource[indexPath.row]
         
-        if self.recipeDataSource.count <= 0 {
-            cell.textLabel?.text = "Please add ingredients to your inventory"
-        } else {
-            let recipe = recipeDataSource[indexPath.row]
-
-            cell.textLabel?.text = recipe.name
-            
-            if recipe.totalIngredients > recipe.userIngredients {
-                cell.detailTextLabel?.text = "(\(recipe.userIngredients!)/\(recipe.totalIngredients!))"
-                cell.detailTextLabel?.textColor = .whiteColor()
-            } else {
-                cell.detailTextLabel?.text = "✓"
-                cell.detailTextLabel?.textColor = .whiteColor()
-            }
-        }
-        
+        cell.textLabel?.text = recipe.name
         cell.textLabel?.textColor = .whiteColor()
-        cell.detailTextLabel?.text = ""
-        
         
         return cell
     }
