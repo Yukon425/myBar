@@ -81,10 +81,14 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         
         if self.recipeDataSource.count <= 0 {
             cell.textLabel?.text = "Please add ingredients to your inventory"
+            cell.detailTextLabel?.text = ""
+            cell.textLabel?.textColor = .whiteColor()
+
         } else {
             let recipe = recipeDataSource[indexPath.row]
 
             cell.textLabel?.text = recipe.name
+            cell.textLabel?.textColor = .whiteColor()
             
             if recipe.totalIngredients > recipe.userIngredients {
                 cell.detailTextLabel?.text = "(\(recipe.userIngredients!)/\(recipe.totalIngredients!))"
@@ -94,11 +98,6 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
                 cell.detailTextLabel?.textColor = .whiteColor()
             }
         }
-        
-        cell.textLabel?.textColor = .whiteColor()
-        cell.detailTextLabel?.text = ""
-        
-        
         return cell
     }
     
