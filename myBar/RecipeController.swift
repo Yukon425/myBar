@@ -23,7 +23,7 @@ class RecipeController {
         var filteredRecipes = [Recipe]()
         var inventoryStrings = [String]()
         for ingredient in inventory {
-            let nameString = ingredient.name
+            let nameString = ingredient.name.lowercaseString
             inventoryStrings.append(nameString)
         }
         
@@ -32,7 +32,7 @@ class RecipeController {
             
             
             for ingredient in recipe.ingredients{
-                let ingredientName = ingredient["name"]! as String
+                let ingredientName = ingredient["name"]!.lowercaseString
                 recipeIngredients.append(ingredientName)
             }
             
