@@ -19,13 +19,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        IngredientController.sharedController.myPantry = []
         SettingsController.firstLaunch()
-
-//        print(IngredientController.sharedController.myPantry.map({$0.name}))
-//        Do any additional setup after loading the view.
-//        print(JSONController.queryRecipes()[34].instructions)
-//        print(JSONController.queryRecipes()[34].ingredients)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -42,23 +36,6 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    
-//    func checkEmptyPantry() {
-//        if alcoholicDataSource.count + nonAlcoholicDataSource.count == 0 {
-////            print("There are no items in the pantry")
-//            let pantryAlertController = UIAlertController(title: "Pantry is Empty", message: "Click on '+' to add ingredients." , preferredStyle: .Alert)
-//            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
-//                print(action)
-//            }
-//            
-//            pantryAlertController.addAction(continueAction)
-//            
-//            presentViewController(pantryAlertController, animated: true, completion: nil)
-//            
-//        } else {
-//            print("There are items in the pantry")
-//        }
-//    }
     
     func splitDataSource(){
         alcoholicDataSource = []
@@ -92,9 +69,6 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             
             cell.setCell(ingredient)
             
-//            cell.textLabel?.text = ingredient.name
-//            cell.textLabel?.textColor = .whiteColor()
-            
             return cell
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath) as! IngredientTableViewCell
@@ -102,9 +76,6 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             let ingredient = nonAlcoholicDataSource[indexPath.row]
             
             cell.setCell(ingredient)
-            
-//            cell.textLabel?.text = ingredient.name
-//            cell.textLabel?.textColor = .whiteColor()
             
             return cell
         }
@@ -121,12 +92,12 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        header.contentView.backgroundColor = .lightColor()
-        header.textLabel?.textColor = .whiteColor()
-        header.layer.borderWidth = 1.75
-        header.layer.cornerRadius = 5.0
-        header.layer.borderColor = UIColor.whiteColor().CGColor
+//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+//        header.contentView.backgroundColor = .lightColor()
+//        header.textLabel?.textColor = .whiteColor()
+//        header.layer.borderWidth = 1.75
+//        header.layer.cornerRadius = 5.0
+//        header.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
