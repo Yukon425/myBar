@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="C0K-lx-i8X">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <rect key="frame" x="205" y="175" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="C0K-lx-i8X" secondAttribute="height" multiplier="1:1" id="a48-3F-8t7"/>
                                     <constraint firstAttribute="width" constant="250" id="k1z-Z3-Rmy"/>
@@ -28,7 +28,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.49019607843137253" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="C0K-lx-i8X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="IcL-iY-GDO"/>
+                            <constraint firstItem="C0K-lx-i8X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="30" id="IcL-iY-GDO"/>
                             <constraint firstItem="C0K-lx-i8X" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="RA0-oP-E4w"/>
                         </constraints>
                     </view>
