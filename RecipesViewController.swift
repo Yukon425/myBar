@@ -9,7 +9,9 @@
 import UIKit
 
 class RecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
+    
+    var fromSingleIngredient: Ingredient?
     var recipeDataSource: [Recipe] = []
     
     @IBOutlet weak var tableViewOutlet: UITableView!
@@ -38,8 +40,12 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "Possibilities"
+        if let fromSingleIngredient = fromSingleIngredient {
+            let name = fromSingleIngredient.name
+            self.navigationItem.title = "\(name) Recipes"
+        } else {
+            self.navigationItem.title = "Possibilities"
+        }
         self.canBecomeFirstResponder()
     }
     
@@ -61,9 +67,25 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func populateDataSource(){
-//        let inventory = IngredientController.sharedController.myPantry
-//        let recipes = JSONController.queryRecipes()
-        recipeDataSource = RecipeController.sharedInstance.possibleRecipes
+        
+        if let fromSingleIngredient = fromSingleIngredient{
+                        
+            var newRecipes: [Recipe] = []
+            
+            for recipe in RecipeController.sharedInstance.possibleRecipes {
+                let ingredients = recipe.ingredients.map({$0["name"]!})
+                print("")
+                if ingredients.contains(fromSingleIngredient.name){
+                    newRecipes.append(recipe)
+                }
+            }
+            
+            recipeDataSource = newRecipes
+            
+        } else {
+            recipeDataSource = RecipeController.sharedInstance.possibleRecipes
+        }
+        
     }
     
 

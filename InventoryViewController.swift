@@ -92,13 +92,15 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-//        header.contentView.backgroundColor = .lightColor()
-//        header.textLabel?.textColor = .whiteColor()
-//        header.layer.borderWidth = 1.75
-//        header.layer.cornerRadius = 5.0
-//        header.layer.borderColor = UIColor.whiteColor().CGColor
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let ingredient = alcoholicDataSource[indexPath.row]
+        
+        self.performSegueWithIdentifier("oneIngredient", sender: ingredient)
+    }
+    
+    
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
@@ -116,9 +118,17 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
                 IngredientController.sharedController.removeIngredient(ingredient)
                 self.splitDataSource()
                 self.nonAlcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            
         }
-        
+    }
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "oneIngredient"{
+            let dVC = segue.destinationViewController as! RecipesViewController
+            let ingredient = sender as! Ingredient
+            dVC.fromSingleIngredient = ingredient
+        }
     }
 
 }

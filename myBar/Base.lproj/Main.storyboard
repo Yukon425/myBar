@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cR8-Vb-PuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="791"/>
+            <point key="canvasLocation" x="1857" y="862"/>
         </scene>
         <!--Add Ingredient View Controller-->
         <scene sceneID="3Z1-tC-MbQ">
@@ -101,7 +101,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-Fz-ehw">
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccC-Fz-ehw">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.1333333333" green="0.18039215689999999" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMZ-aq-TrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2556" y="791"/>
+            <point key="canvasLocation" x="2556" y="862"/>
         </scene>
         <!--Inventory View Controller-->
         <scene sceneID="yiM-6u-oba">
@@ -302,7 +302,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qZ-U9-jYr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1qZ-U9-jYr">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="320"/>
                                 <color key="backgroundColor" red="0.0" green="0.49411764705882355" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -416,6 +416,7 @@
                     <connections>
                         <outlet property="alcoholicTableView" destination="1qZ-U9-jYr" id="s1v-bd-uVD"/>
                         <outlet property="nonAlcoholicTableView" destination="oVZ-i9-jLV" id="pFg-bM-qB5"/>
+                        <segue destination="dyG-Rw-RQi" kind="show" identifier="oneIngredient" id="4FI-tu-Uqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0t2-7b-8Bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -479,7 +480,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4bd-v1-Inc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="791"/>
+            <point key="canvasLocation" x="1045" y="862"/>
         </scene>
     </scenes>
     <resources>
@@ -488,5 +489,8 @@
         <image name="note" width="879" height="630"/>
         <image name="wine" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4FI-tu-Uqr"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
