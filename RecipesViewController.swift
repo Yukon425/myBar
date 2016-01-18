@@ -40,12 +40,12 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let fromSingleIngredient = fromSingleIngredient {
-            let name = fromSingleIngredient.name
-            self.navigationItem.title = "\(name) Recipes"
-        } else {
-            self.navigationItem.title = "Possibilities"
-        }
+//        if let fromSingleIngredient = fromSingleIngredient {
+//            let name = fromSingleIngredient.name
+//            self.navigationItem.title = "\(name) Recipes"
+//        } else {
+//            self.navigationItem.title = "Possibilities"
+//        }
         self.canBecomeFirstResponder()
     }
     
@@ -94,6 +94,15 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
             return 1
         } else {
             return recipeDataSource.count
+        }
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let fromSingleIngredient = fromSingleIngredient {
+            let name = fromSingleIngredient.name
+            return "\(name) Recipes"
+        } else {
+            return "Possibilities"
         }
     }
     
