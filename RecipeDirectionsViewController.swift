@@ -46,25 +46,24 @@ class RecipeDirectionsViewController: UIViewController, UITableViewDataSource, U
 
         } else {
             cell.textLabel?.text = "●   " + ingredientAmt! + ingredientName!
-            cell.textLabel?.textColor = .myLightGray()
+            cell.textLabel?.textColor = .grayColor()
 
         }
-        
         
         return cell
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-            return "Ingredients"
+        return "Recipe"
     }
     
-    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
-        header.contentView.backgroundColor = .lightColor()
-        header.textLabel?.textColor = .whiteColor()
-        header.layer.borderWidth = 1.75
-        header.layer.cornerRadius = 5.0
-        header.layer.borderColor = UIColor.whiteColor().CGColor
-    }
+//    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//        let header: UITableViewHeaderFooterView = view as! UITableViewHeaderFooterView
+//        header.contentView.backgroundColor = .lightColor()
+//        header.textLabel?.textColor = .whiteColor()
+//        header.layer.borderWidth = 1.75
+//        header.layer.cornerRadius = 5.0
+//        header.layer.borderColor = UIColor.whiteColor().CGColor
+//    }
 
 }

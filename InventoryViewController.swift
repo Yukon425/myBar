@@ -14,17 +14,19 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     @IBOutlet weak var nonAlcoholicTableView: UITableView!
     
+    @IBOutlet weak var navBar: UINavigationItem!
+    
     var alcoholicDataSource = [Ingredient]()
     var nonAlcoholicDataSource = [Ingredient]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SettingsController.firstLaunch()
+        navBar.titleView = UIImageView(image: UIImage(named: "devBar_white"))
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "My Bar"
         
         splitDataSource()
 
@@ -83,10 +85,8 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView == alcoholicTableView {
-            tableView.headerViewForSection(0)?.layer.cornerRadius = 8
             return "Alcoholic"
         } else {
-            tableView.headerViewForSection(1)?.layer.cornerRadius = 8
             return "Non-Alcoholic"
         }
     }
