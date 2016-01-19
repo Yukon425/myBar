@@ -26,6 +26,7 @@
 		54FBC5EB1C4431F300411F4C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FBC5EA1C4431F300411F4C /* SettingsController.swift */; };
 		83977F811C3F0287006AC3B9 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83977F801C3F0287006AC3B9 /* AppearanceController.swift */; };
 		83A3EC411C3D814900D1E03E /* IngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3EC401C3D814900D1E03E /* IngredientController.swift */; };
+		BB3515CC1C4DEF1E0073D621 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3515CB1C4DEF1E0073D621 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		54FBC5EA1C4431F300411F4C /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsController.swift; path = myBar/SettingsController.swift; sourceTree = "<group>"; };
 		83977F801C3F0287006AC3B9 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
 		83A3EC401C3D814900D1E03E /* IngredientController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientController.swift; sourceTree = "<group>"; };
+		BB3515CB1C4DEF1E0073D621 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				1F5975091C3B3E5900CD1D2F /* AddIngredientViewController.swift */,
 				1FAF6EEB1C4055B900FE9002 /* IngredientTableViewCell.swift */,
 				544032B61C40649E00920290 /* AddIngredientTableViewCell.swift */,
+				BB3515CB1C4DEF1E0073D621 /* TabBarController.swift */,
 			);
 			name = Views;
 			path = myBar;
@@ -218,6 +221,7 @@
 				1F5974F21C3B3AFB00CD1D2F /* AppDelegate.swift in Sources */,
 				1F5A497D1C3D955600EAE099 /* JSONController.swift in Sources */,
 				1F59750A1C3B3E5900CD1D2F /* AddIngredientViewController.swift in Sources */,
+				BB3515CC1C4DEF1E0073D621 /* TabBarController.swift in Sources */,
 				54509D5A1C3DB0D800EFCBFC /* RecipeController.swift in Sources */,
 				83A3EC411C3D814900D1E03E /* IngredientController.swift in Sources */,
 				54509D511C3C5CB600EFCBFC /* Recipe.swift in Sources */,
