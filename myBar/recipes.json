@@ -2091,11 +2091,23 @@
         "name" : "Ice"
       },
       {
-        "volume" : "",
+        "volume" : "1\/2 oz ",
+        "name" : "Rum"
+      },
+      {
+        "volume" : "1\/2 oz ",
         "name" : "Tang"
       },
       {
-        "volume" : ",everclear,rum,757",
+        "volume" : "1\/2 oz ",
+        "name" : "Everclear"
+       },
+       {
+        "volume" : "1\/2 oz ",
+        "name" : "7-Up"
+       },
+      {
+        "volume" : "1\/2 oz ",
         "name" : "Vodka"
       }
     ],
