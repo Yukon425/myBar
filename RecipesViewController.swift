@@ -79,11 +79,13 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
                     newRecipes.append(recipe)
                 }
             }
-            
+            newRecipes.sortInPlace({($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
             recipeDataSource = newRecipes
             
         } else {
-            recipeDataSource = RecipeController.sharedInstance.possibleRecipes
+            var newRecipes = RecipeController.sharedInstance.possibleRecipes
+            newRecipes.sortInPlace({($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
+            recipeDataSource = newRecipes
         }
         
     }
