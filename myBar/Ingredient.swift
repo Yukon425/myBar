@@ -10,9 +10,9 @@ import Foundation
 
 class Ingredient: Equatable {
     
-    private let alcoholicKey = "alcoholic"
-    private let nameKey = "name"
-    private let categoryKey = "category"
+    fileprivate let alcoholicKey = "alcoholic"
+    fileprivate let nameKey = "name"
+    fileprivate let categoryKey = "category"
     
     var alcoholic: Bool
     var name: String
@@ -62,9 +62,9 @@ class Ingredient: Equatable {
             alcoholicKey : self.alcoholic,
             nameKey : self.name,
             categoryKey: self.category
-        ]
+        ] as [String : Any]
         
-        return dictionary as! [String : AnyObject]
+        return dictionary as [String : AnyObject]
     }
 }
 

@@ -14,15 +14,15 @@ class SettingsController {
 //    static let sharedInstance = SettingsController()
  
     static func firstLaunch() {
-        if(NSUserDefaults.standardUserDefaults().boolForKey("HasLaunchedOnce"))
+        if(UserDefaults.standard.bool(forKey: "HasLaunchedOnce"))
         {
             IngredientController.sharedController.loadFromPersistentStorage()
         }
         else
         {
             // first launch
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "HasLaunchedOnce")
-            NSUserDefaults.standardUserDefaults().synchronize()
+            UserDefaults.standard.set(true, forKey: "HasLaunchedOnce")
+            UserDefaults.standard.synchronize()
 //            let salt = Ingredient(alcoholic: false, name: "Salt", category: "spice")
 //            IngredientController.sharedController.addIngredient(salt)
             
@@ -36,10 +36,10 @@ class SettingsController {
     }
     
     static func checkEmptyPantry() -> UIViewController? {
-        if !NSUserDefaults.standardUserDefaults().boolForKey("DisplayedAddIngredients") {
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "DisplayedAddIngredients")
-            let pantryAlertController = UIAlertController(title: "Pantry Requires More Ingredients", message: "Tap '+' to add more ingredients.", preferredStyle: .Alert)
-            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
+        if !UserDefaults.standard.bool(forKey: "DisplayedAddIngredients") {
+            UserDefaults.standard.set(true, forKey: "DisplayedAddIngredients")
+            let pantryAlertController = UIAlertController(title: "Pantry Requires More Ingredients", message: "Tap '+' to add more ingredients.", preferredStyle: .alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .default) { (action) in
                 print(action)
             }
             
@@ -53,10 +53,10 @@ class SettingsController {
     }
     
     static func randomizeAlert() -> UIViewController? {
-        if !NSUserDefaults.standardUserDefaults().boolForKey("DisplayedRecipes") {
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "DisplayedRecipes")
-            let randomizedAlertController = UIAlertController(title: "Generate Random Recipe", message: "Shake phone or tap the dice to generate a randomized recipe.", preferredStyle: .Alert)
-            let continueAction = UIAlertAction(title: "Continue", style: .Default) { (action) in
+        if !UserDefaults.standard.bool(forKey: "DisplayedRecipes") {
+            UserDefaults.standard.set(true, forKey: "DisplayedRecipes")
+            let randomizedAlertController = UIAlertController(title: "Generate Random Recipe", message: "Shake phone or tap the dice to generate a randomized recipe.", preferredStyle: .alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .default) { (action) in
                 print(action)
             }
             

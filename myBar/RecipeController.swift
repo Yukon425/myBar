@@ -18,12 +18,12 @@ class RecipeController {
         self.possibleRecipes = filterRecipes(IngredientController.sharedController.myPantry, recipes: JSONController.queryRecipes())
     }
     
-    func filterRecipes(inventory: [Ingredient], recipes: [Recipe]) -> [Recipe] {
+    func filterRecipes(_ inventory: [Ingredient], recipes: [Recipe]) -> [Recipe] {
         var canMake = true
         var filteredRecipes = [Recipe]()
         var inventoryStrings = [String]()
         for ingredient in inventory {
-            let nameString = ingredient.name.lowercaseString
+            let nameString = ingredient.name.lowercased()
             inventoryStrings.append(nameString)
         }
         
@@ -32,7 +32,7 @@ class RecipeController {
             
             
             for ingredient in recipe.ingredients{
-                let ingredientName = ingredient["name"]!.lowercaseString
+                let ingredientName = ingredient["name"]!.lowercased()
                 recipeIngredients.append(ingredientName)
             }
             
@@ -41,7 +41,7 @@ class RecipeController {
             canMake = true
             for recipeItem in recipeIngredients {
                 if inventoryStrings.contains(recipeItem) {
-                    containCount++
+                    containCount += 1
                 }
             }
             

@@ -25,7 +25,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         navBar.titleView = UIImageView(image: UIImage(named: "devBar_white"))
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         splitDataSource()
@@ -34,7 +34,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         self.nonAlcoholicTableView.reloadData()
         
         if let alertVC = SettingsController.checkEmptyPantry() {
-            presentViewController(alertVC, animated: true, completion: nil)
+            present(alertVC, animated: true, completion: nil)
         }
     }
     
@@ -56,7 +56,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == alcoholicTableView{
             return alcoholicDataSource.count
         } else {
@@ -64,18 +64,18 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == alcoholicTableView {
-            let cell = tableView.dequeueReusableCellWithIdentifier("alcoholic", forIndexPath: indexPath) as! IngredientTableViewCell
-            let ingredient = alcoholicDataSource[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "alcoholic", for: indexPath) as! IngredientTableViewCell
+            let ingredient = alcoholicDataSource[(indexPath as NSIndexPath).row]
             
             cell.setCell(ingredient)
             
             return cell
         } else {
-            let cell = tableView.dequeueReusableCellWithIdentifier("nonAlcoholic", forIndexPath: indexPath) as! IngredientTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "nonAlcoholic", for: indexPath) as! IngredientTableViewCell
             
-            let ingredient = nonAlcoholicDataSource[indexPath.row]
+            let ingredient = nonAlcoholicDataSource[(indexPath as NSIndexPath).row]
             
             cell.setCell(ingredient)
             
@@ -83,7 +83,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if tableView == alcoholicTableView {
             return "Alcoholic"
         } else {
@@ -91,41 +91,41 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    func tableView(tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let ingredient = alcoholicDataSource[indexPath.row]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ingredient = alcoholicDataSource[(indexPath as NSIndexPath).row]
         
-        self.performSegueWithIdentifier("oneIngredient", sender: ingredient)
+        self.performSegue(withIdentifier: "oneIngredient", sender: ingredient)
     }
     
     
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         
-        if tableView == alcoholicTableView && editingStyle == .Delete {
+        if tableView == alcoholicTableView && editingStyle == .delete {
             
-                let ingredient = self.alcoholicDataSource[indexPath.row]
+                let ingredient = self.alcoholicDataSource[(indexPath as NSIndexPath).row]
                 IngredientController.sharedController.removeIngredient(ingredient)
                 self.splitDataSource()
-                self.alcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                self.alcoholicTableView.deleteRows(at: [indexPath], with: .fade)
             
-         } else  if tableView == nonAlcoholicTableView && editingStyle == .Delete {
+         } else  if tableView == nonAlcoholicTableView && editingStyle == .delete {
             
-                let ingredient = self.nonAlcoholicDataSource[indexPath.row]
+                let ingredient = self.nonAlcoholicDataSource[(indexPath as NSIndexPath).row]
                 IngredientController.sharedController.removeIngredient(ingredient)
                 self.splitDataSource()
-                self.nonAlcoholicTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+                self.nonAlcoholicTableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
     // MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "oneIngredient"{
-            let dVC = segue.destinationViewController as! RecipesViewController
+            let dVC = segue.destination as! RecipesViewController
             let ingredient = sender as! Ingredient
             dVC.fromSingleIngredient = ingredient
         }

@@ -7,6 +7,26 @@
 //
 
 import UIKit
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
 
 class RecipesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -17,7 +37,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var tableViewOutlet: UITableView!
     @IBOutlet weak var randomButtonOutlet: UIButton!
     
-    @IBAction func randomButtonTapped(sender: AnyObject) {
+    @IBAction func randomButtonTapped(_ sender: AnyObject) {
         if recipeDataSource.count > 0 {
             presentRandomAlert()
         }
@@ -27,16 +47,16 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         let number = arc4random_uniform(UInt32(recipeDataSource.count))
         let recipe = recipeDataSource[Int(number)]
         
-        let alert = UIAlertController(title: "\(recipe.name)", message: "", preferredStyle: .Alert)
-        let toDismiss = UIAlertAction(title: "Dismiss", style: .Cancel) { (alert) -> Void in
+        let alert = UIAlertController(title: "\(recipe.name)", message: "", preferredStyle: .alert)
+        let toDismiss = UIAlertAction(title: "Dismiss", style: .cancel) { (alert) -> Void in
             print(alert)
         }
-        let toRecipe = UIAlertAction(title: "View Recipe", style: .Default) { (action) -> Void in
-            self.performSegueWithIdentifier("toDetails", sender: recipe)
+        let toRecipe = UIAlertAction(title: "View Recipe", style: .default) { (action) -> Void in
+            self.performSegue(withIdentifier: "toDetails", sender: recipe)
         }
         alert.addAction(toDismiss)
         alert.addAction(toRecipe)
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,22 +66,22 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
 //        } else {
 //            self.navigationItem.title = "Possibilities"
 //        }
-        self.canBecomeFirstResponder()
+        //self.canBecomeFirstResponder
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        let myGroup = dispatch_group_create()
-        dispatch_group_enter(myGroup)
+        let myGroup = DispatchGroup()
+        myGroup.enter()
         populateDataSource()
-        dispatch_group_leave(myGroup)
+        myGroup.leave()
         
-        dispatch_group_notify(myGroup, dispatch_get_main_queue()) { () -> Void in
+        myGroup.notify(queue: DispatchQueue.main) { () -> Void in
             self.tableViewOutlet.reloadData()
             
         if let randomizedAlertVC = SettingsController.randomizeAlert() {
-            self.presentViewController(randomizedAlertVC, animated: true, completion: nil)
+            self.present(randomizedAlertVC, animated: true, completion: nil)
             }
         }
     }
@@ -79,19 +99,19 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
                     newRecipes.append(recipe)
                 }
             }
-            newRecipes.sortInPlace({($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
+            newRecipes.sort(by: {($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
             recipeDataSource = newRecipes
             
         } else {
             var newRecipes = RecipeController.sharedInstance.possibleRecipes
-            newRecipes.sortInPlace({($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
+            newRecipes.sort(by: {($0.totalIngredients! - $0.userIngredients!) < ($1.totalIngredients! - $1.userIngredients!)})
             recipeDataSource = newRecipes
         }
         
     }
     
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if recipeDataSource.count == 0 {
             return 1
         } else {
@@ -99,7 +119,7 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if let fromSingleIngredient = fromSingleIngredient {
             let name = fromSingleIngredient.name
             return "\(name) Recipes"
@@ -108,40 +128,40 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("recipe", forIndexPath: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipe", for: indexPath)
         
         
         if self.recipeDataSource.count <= 0 {
             cell.textLabel?.text = "Please add ingredients to your inventory"
             cell.detailTextLabel?.text = ""
-            cell.textLabel?.textColor = .whiteColor()
+            cell.textLabel?.textColor = UIColor.white
 
         } else {
-            let recipe = recipeDataSource[indexPath.row]
+            let recipe = recipeDataSource[(indexPath as NSIndexPath).row]
 
             cell.textLabel?.text = recipe.name
-            cell.textLabel?.textColor = .whiteColor()
+            cell.textLabel?.textColor = UIColor.white
             
             if recipe.totalIngredients > recipe.userIngredients {
                 cell.detailTextLabel?.text = "(\(recipe.userIngredients!)/\(recipe.totalIngredients!))"
-                cell.detailTextLabel?.textColor = .whiteColor()
+                cell.detailTextLabel?.textColor = UIColor.white
             } else {
                 cell.detailTextLabel?.text = "✓"
-                cell.detailTextLabel?.textColor = .whiteColor()
+                cell.detailTextLabel?.textColor = UIColor.white
             }
         }
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let recipe = recipeDataSource[indexPath.row]
-        self.performSegueWithIdentifier("toDetails", sender: recipe)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipeDataSource[(indexPath as NSIndexPath).row]
+        self.performSegue(withIdentifier: "toDetails", sender: recipe)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetails"{
-            let dVC = segue.destinationViewController as! RecipeDirectionsViewController
+            let dVC = segue.destination as! RecipeDirectionsViewController
             let recipe = sender as! Recipe
             dVC.myRecipe = recipe
         }
@@ -149,13 +169,13 @@ class RecipesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //MARK: - Implementing Shake functionality
     
-    override func canBecomeFirstResponder() -> Bool {
+    override var canBecomeFirstResponder : Bool {
         return true
     }
     
-    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         
-        if(event!.subtype == UIEventSubtype.MotionShake) {
+        if(event!.subtype == UIEventSubtype.motionShake) {
             
             if recipeDataSource.count > 0 {
                 presentRandomAlert()

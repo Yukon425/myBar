@@ -20,54 +20,54 @@ class AddIngredientTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        self.selectionStyle = .None
+        self.selectionStyle = .none
         // Configure the view for the selected state
     }
 
-    func setCell(ingredient: Ingredient){
+    func setCell(_ ingredient: Ingredient){
         self.nameLabel.text = ingredient.name
-        self.nameLabel.textColor = .whiteColor()
+        self.nameLabel.textColor = UIColor.white
         
         switch ingredient.category {
         case "mixer":
             self.iconImage.image = UIImage(named: "mixer")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "hardDrink":
             self.iconImage.image = UIImage(named: "hardDrink")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "softDrink":
             self.iconImage.image = UIImage(named: "softDrink")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "produce":
             self.iconImage.image = UIImage(named: "produce")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "beer":
             self.iconImage.image = UIImage(named: "beer")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "spice":
             self.iconImage.image = UIImage(named: "spice")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "ice":
             self.iconImage.image = UIImage(named: "ice")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         case "wine":
             self.iconImage.image = UIImage(named: "wine")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         default:
             self.iconImage.image = UIImage(named: "mixer")
-            self.iconImage.image = iconImage.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-            self.iconImage.tintColor = .whiteColor()
+            self.iconImage.image = iconImage.image!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+            self.iconImage.tintColor = UIColor.white
         }
     }
 }

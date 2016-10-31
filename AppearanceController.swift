@@ -34,8 +34,8 @@ extension UIColor {
 class AppearanceController{
     class func setupAppearance() {
        // UINavigationBar.appearance().tintColor = .darkColor()
-        UITabBar.appearance().tintColor = .whiteColor()
-        UIBarButtonItem.appearance().tintColor = .whiteColor()
+        UITabBar.appearance().tintColor = UIColor.white
+        UIBarButtonItem.appearance().tintColor = UIColor.white
         
 
     }

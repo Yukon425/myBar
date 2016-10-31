@@ -10,10 +10,10 @@ import Foundation
 
 class Recipe {
     
-    private let nameKey = "name"
-    private let ingredientsKey = "ingredients"
-    private let volumeKey = "volume"
-    private let instructionsKey = "instructions"
+    fileprivate let nameKey = "name"
+    fileprivate let ingredientsKey = "ingredients"
+    fileprivate let volumeKey = "volume"
+    fileprivate let instructionsKey = "instructions"
     
     var name: String = ""
     var ingredients: [[String:String]] = []

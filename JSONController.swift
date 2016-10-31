@@ -14,14 +14,14 @@ class JSONController {
         
         var recipes: [Recipe] = []
         
-        guard let path = NSBundle.mainBundle().pathForResource("recipes", ofType: "json") else {return []}
+        guard let path = Bundle.main.path(forResource: "recipes", ofType: "json") else {return []}
         
-        guard let json = NSData(contentsOfFile: path) else {return []}
+        guard let json = try? Data(contentsOf: URL(fileURLWithPath: path)) else {return []}
         
-        let object: AnyObject
+        let object: Any
         
         do {
-            object = try NSJSONSerialization.JSONObjectWithData(json, options: [])
+            object = try JSONSerialization.jsonObject(with: json, options: [])
         } catch {
             print("Json failed")
             return []
@@ -45,14 +45,14 @@ class JSONController {
         
         var ingredients: [Ingredient] = []
         
-        guard let path = NSBundle.mainBundle().pathForResource("catingredients", ofType: "json") else {return []}
+        guard let path = Bundle.main.path(forResource: "catingredients", ofType: "json") else {return []}
         
-        guard let json = NSData(contentsOfFile: path) else {return []}
+        guard let json = try? Data(contentsOf: URL(fileURLWithPath: path)) else {return []}
         
-        let object: AnyObject
+        let object: Any
         
         do {
-            object = try NSJSONSerialization.JSONObjectWithData(json, options: [])
+            object = try JSONSerialization.jsonObject(with: json, options: [])
         } catch {
             print("Json failed")
             return []

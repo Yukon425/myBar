@@ -10,7 +10,7 @@ import Foundation
 
 class IngredientController {
     
-    private let ingredientsKey = "ingredients"
+    fileprivate let ingredientsKey = "ingredients"
     
     static let sharedController = IngredientController()
     
@@ -18,9 +18,9 @@ class IngredientController {
         didSet{
             
             //The following code takes 2-3 seconds, we put it on a background thread to prevent "deleting" from slowing down the UI
-            let backgroundQueue = dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0)
+            let backgroundQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.background)
 
-            dispatch_async(backgroundQueue, { () -> Void in
+            backgroundQueue.async(execute: { () -> Void in
                 RecipeController.sharedInstance.populatePossibleRecipes()
             })
         }
@@ -28,7 +28,7 @@ class IngredientController {
     
 
     
-    func addIngredient(ingredient: Ingredient) {
+    func addIngredient(_ ingredient: Ingredient) {
         if !(myPantry.contains(ingredient)){
             myPantry.append(ingredient)
             self.saveToPersistentStorage()
@@ -36,21 +36,21 @@ class IngredientController {
         
     }
     
-    func addPrepopulatedIngredients(ingredients: [Ingredient]) {
+    func addPrepopulatedIngredients(_ ingredients: [Ingredient]) {
         for ingredient in ingredients {
             addIngredient(ingredient)
         }
     }
     
-    func removeIngredient(ingredient: Ingredient) {
-        if let ingredientIndex = myPantry.indexOf(ingredient) {
-            myPantry.removeAtIndex(ingredientIndex)
+    func removeIngredient(_ ingredient: Ingredient) {
+        if let ingredientIndex = myPantry.index(of: ingredient) {
+            myPantry.remove(at: ingredientIndex)
             self.saveToPersistentStorage()
         }
     }
     
     func loadFromPersistentStorage() {
-        let ingredientDictionariesFromDefaults = NSUserDefaults.standardUserDefaults().objectForKey(ingredientsKey) as? [Dictionary<String, AnyObject>]
+        let ingredientDictionariesFromDefaults = UserDefaults.standard.object(forKey: ingredientsKey) as? [Dictionary<String, AnyObject>]
         
         if let ingredientDictionaries = ingredientDictionariesFromDefaults {
             
@@ -60,7 +60,7 @@ class IngredientController {
     
     func saveToPersistentStorage() {
         let ingredientDictionaries = self.myPantry.map({$0.dictionaryCopy()})
-        NSUserDefaults.standardUserDefaults().setObject(ingredientDictionaries, forKey: ingredientsKey)
+        UserDefaults.standard.set(ingredientDictionaries, forKey: ingredientsKey)
     }
     
     
